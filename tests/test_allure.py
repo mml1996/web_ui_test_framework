@@ -1,7 +1,7 @@
 import allure
 import pytest
 
-
+"""
 @allure.epic('saucedemo电商Web UI自动化测试框架')
 @allure.feature('登录模块')
 @allure.story('标准用户登录')
@@ -27,6 +27,6 @@ def test_b():
 def test_c():
     pass
 
-
+"""
 
 

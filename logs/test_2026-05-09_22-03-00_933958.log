@@ -1,0 +1,3 @@
+2026-05-09 22:03:00.977 | INFO     | conftest:driver:50 - Initializing WebDriver
+2026-05-09 22:03:36.024 | ERROR    | conftest:driver:66 - 初始化浏览器失败: Message: Can not connect to the Service ./chromedriver
+

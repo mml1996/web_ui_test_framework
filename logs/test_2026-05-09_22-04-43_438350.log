@@ -1,0 +1,18 @@
+2026-05-09 22:04:43.479 | INFO     | conftest:driver:50 - Initializing WebDriver
+2026-05-09 22:04:46.089 | INFO     | conftest:driver:61 - Successfully navigated to base URL: https://www.saucedemo.com
+2026-05-09 22:04:46.329 | INFO     | conftest:driver:71 - Quitting WebDriver
+2026-05-09 22:04:46.434 | INFO     | conftest:driver:50 - Initializing WebDriver
+2026-05-09 22:04:47.581 | INFO     | conftest:driver:61 - Successfully navigated to base URL: https://www.saucedemo.com
+2026-05-09 22:04:49.408 | ERROR    | conftest:pytest_runtest_makereport:110 - 用例失败，截图已保存: reports/screenshots/test_invalid_login_20260509220449.png
+2026-05-09 22:04:49.569 | INFO     | conftest:driver:71 - Quitting WebDriver
+2026-05-09 22:04:49.687 | INFO     | conftest:driver:50 - Initializing WebDriver
+2026-05-09 22:04:51.066 | INFO     | conftest:driver:61 - Successfully navigated to base URL: https://www.saucedemo.com
+2026-05-09 22:04:53.655 | INFO     | conftest:driver:71 - Quitting WebDriver
+2026-05-09 22:04:53.789 | INFO     | conftest:driver:50 - Initializing WebDriver
+2026-05-09 22:04:55.073 | INFO     | conftest:driver:61 - Successfully navigated to base URL: https://www.saucedemo.com
+2026-05-09 22:04:55.761 | ERROR    | conftest:pytest_runtest_makereport:110 - 用例失败，截图已保存: reports/screenshots/test_login_scenarios[case1]_20260509220455.png
+2026-05-09 22:04:55.853 | INFO     | conftest:driver:71 - Quitting WebDriver
+2026-05-09 22:04:55.929 | INFO     | conftest:driver:50 - Initializing WebDriver
+2026-05-09 22:04:57.730 | INFO     | conftest:driver:61 - Successfully navigated to base URL: https://www.saucedemo.com
+2026-05-09 22:04:58.062 | ERROR    | conftest:pytest_runtest_makereport:110 - 用例失败，截图已保存: reports/screenshots/test_login_scenarios[case2]_20260509220457.png
+2026-05-09 22:04:58.218 | INFO     | conftest:driver:71 - Quitting WebDriver

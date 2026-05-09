@@ -1,2 +1,0 @@
-2026-05-09 16:39:00.135 | INFO     | conftest:driver:49 - Initializing WebDriver
-2026-05-09 16:39:09.057 | INFO     | conftest:driver:64 - Quitting WebDriver

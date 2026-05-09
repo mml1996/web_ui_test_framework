@@ -1,0 +1,2 @@
+2026-05-09 21:39:05.263 | INFO     | conftest:driver:50 - Initializing WebDriver
+2026-05-09 21:39:29.170 | ERROR    | conftest:driver:66 - 初始化浏览器失败: Could not reach host. Are you offline?

@@ -1,0 +1,2 @@
+WARNING  pytest_result_log:plugin.py:122 ----------------------Start: tests/test_allure.py::test_c-----------------------
+WARNING  pytest_result_log:plugin.py:128 -----------------------End: tests/test_allure.py::test_c------------------------

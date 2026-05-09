@@ -1,7 +1,7 @@
 ###！！！！！！9.编写测试用例
 # from unittest import case
 import allure
-
+import pytest
 ###   登录相关用例   ###
 ##  做什么
 # 结合页面对象和fixture，按真实业务写测试
@@ -16,10 +16,12 @@ import allure
 from pages.inventory_page import InventoryPage
 from pages.login_page import LoginPage
 
+@allure.epic('saucedemo电商Web UI自动化测试框架')
 @allure.feature('登录模块')
 class TestLogin:
     @allure.story('标准用户登录')
     @allure.title('验证标准用户可以成功登录系统')
+  #  @pytest.mark.skip
     def test_valid_login(self,driver):
         login_page = LoginPage(driver)
 
@@ -50,6 +52,8 @@ def load_login_data():
     data_path = Path(__file__).parent.parent / 'data'/ 'login_data.yaml'
     with open(data_path, encoding='utf-8') as f:
         return yaml.safe_load(f)
+
+@allure.epic('saucedemo电商Web UI自动化测试框架')
 @allure.feature('登录模块')
 class TestLoginScenarios:
     @allure.story('多账号登录场景验证')
@@ -59,7 +63,7 @@ class TestLoginScenarios:
         """
         多账号登录场景验证
         :param driver: 浏览器驱动
-        :param case: 测试数据，包含username\password\expected_title或expected_error
+        :param case: 测试数据，包含username\\password\\expected_title或expected_error
         """
         login_page = LoginPage(driver)
         login_page.login(case['username'],case['password'])
