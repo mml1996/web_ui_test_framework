@@ -1,4 +1,5 @@
-
+import sys
+import os
 ###  10.集成日志系统
 
 ##  做什么
@@ -12,8 +13,7 @@
 
 ##  作用
 # 快速定位失败原因，尤其在CI环境无界面时日志是唯一的线索
-import sys
-import os
+
 import pytest
 from pathlib import Path
 from datetime import datetime
