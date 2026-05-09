@@ -3,3 +3,4 @@ selenium
 allure-pytest
 webdriver-manager
 loguru
+pyyaml
