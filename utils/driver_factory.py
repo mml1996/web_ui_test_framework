@@ -25,6 +25,7 @@ from utils.config_reader import config
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service as ChromeService
 from utils.config_reader import config
+from webdriver_manager.chrome import ChromeDriverManager  # 自动管理驱动
 
 class DriverFactory:
     @staticmethod
@@ -36,7 +37,8 @@ class DriverFactory:
             from selenium.webdriver.chrome.options import Options as ChromeOptions
             chrome_options = ChromeOptions()
 
-            # Mac 防崩溃/卡死必加参数
+            # 必加：CI 环境必须用无头模式
+            chrome_options.add_argument("--headless=new")
             chrome_options.add_argument("--no-sandbox")
             chrome_options.add_argument("--disable-dev-shm-usage")
             chrome_options.add_argument("--disable-gpu")
@@ -47,9 +49,11 @@ class DriverFactory:
             # 关键：设置页面加载策略，避免无限等待页面资源
             chrome_options.set_capability("pageLoadStrategy", "eager")
 
-            # 直接使用项目根目录下的 chromedriver
-            service = ChromeService(executable_path="./chromedriver")
-            driver = webdriver.Chrome(service=service, options=chrome_options)
+            # ✅ 修复：自动下载驱动，不再用你本地的 chromedriver 文件
+            driver = webdriver.Chrome(
+                service=ChromeService(ChromeDriverManager().install()),
+                options=chrome_options
+            )
 
         else:
             raise ValueError(f"Unsupported browser: {browser}")

@@ -1,0 +1,3 @@
+[33mWARNING [0m pytest_result_log:plugin.py:122 --Start: tests/test_login.py::TestLoginScenarios::test_login_scenarios[case1]---
+[31m[1mERROR   [0m pages.base_page:base_page.py:50 定位元素超时: ('id', 'user-name')
+[33mWARNING [0m pytest_result_log:plugin.py:128 ---End: tests/test_login.py::TestLoginScenarios::test_login_scenarios[case1]----

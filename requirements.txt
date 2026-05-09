@@ -6,3 +6,6 @@ loguru
 pyyaml
 pytest-html
 webdriver-manager
+pyyaml
+pytest-html
+webdriver-manager
