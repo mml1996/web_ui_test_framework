@@ -1,0 +1,15 @@
+2026-05-08 22:56:40.535 | INFO     | conftest:driver:44 - Initializing WebDriver
+2026-05-08 22:58:10.724 | INFO     | conftest:driver:48 - Quitting WebDriver
+2026-05-08 22:58:10.811 | INFO     | conftest:driver:44 - Initializing WebDriver
+2026-05-08 22:59:43.806 | INFO     | conftest:driver:48 - Quitting WebDriver
+2026-05-08 22:59:43.890 | INFO     | conftest:driver:44 - Initializing WebDriver
+2026-05-08 23:02:11.426 | ERROR    | conftest:pytest_runtest_makereport:80 - screenshot saved: reports/screenshots/test_login_scenarios[case0]_20260508-230211.png
+2026-05-08 23:02:11.427 | INFO     | conftest:driver:48 - Quitting WebDriver
+2026-05-08 23:02:11.525 | INFO     | conftest:driver:44 - Initializing WebDriver
+2026-05-08 23:03:36.361 | ERROR    | conftest:pytest_runtest_makereport:80 - screenshot saved: reports/screenshots/test_login_scenarios[case1]_20260508-230336.png
+2026-05-08 23:03:36.362 | INFO     | conftest:driver:48 - Quitting WebDriver
+2026-05-08 23:03:36.447 | INFO     | conftest:driver:44 - Initializing WebDriver
+2026-05-08 23:04:37.630 | ERROR    | conftest:pytest_runtest_makereport:80 - screenshot saved: reports/screenshots/test_login_scenarios[case2]_20260508-230437.png
+2026-05-08 23:04:37.631 | INFO     | conftest:driver:48 - Quitting WebDriver
+2026-05-08 23:04:37.715 | INFO     | conftest:driver:44 - Initializing WebDriver
+2026-05-08 23:05:01.496 | INFO     | conftest:driver:48 - Quitting WebDriver

@@ -1,0 +1,21 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sat May 09 16:39:08 CST 2026","Sat May 09 16:39:09 CST 2026","232","tests","test_login","TestLogin","","","验证标准用户可以成功登录系统",""
+"passed","Sat May 09 16:39:00 CST 2026","Sat May 09 16:39:00 CST 2026","0","tests","test_allure","","","","验证锁定用户无法登录，会显示锁定提示",""
+"passed","Sat May 09 16:39:15 CST 2026","Sat May 09 16:39:23 CST 2026","7937","tests","test_login","TestLogin","","","验证锁定用户无法登录，会显示锁定提示",""
+"broken","Sat May 09 16:39:31 CST 2026","Sat May 09 16:39:31 CST 2026","0","tests","test_login","TestLoginScenarios","","","参数化登录用例: 问题用户登录成功","
+多账号登录场景验证
+:param driver: 浏览器驱动
+:param case: 测试数据，包含username\password\expected_title或expected_error
+"
+"passed","Sat May 09 16:39:00 CST 2026","Sat May 09 16:39:00 CST 2026","0","tests","test_allure","","","","参数化登录用例: {case[name]}",""
+"passed","Sat May 09 16:39:00 CST 2026","Sat May 09 16:39:00 CST 2026","0","tests","test_allure","","","","验证标准用户可以成功登录系统",""
+"passed","Sat May 09 16:40:09 CST 2026","Sat May 09 16:40:09 CST 2026","195","tests","test_login","TestLoginScenarios","","","参数化登录用例: 锁定用户登录失败","
+多账号登录场景验证
+:param driver: 浏览器驱动
+:param case: 测试数据，包含username\password\expected_title或expected_error
+"
+"passed","Sat May 09 16:39:31 CST 2026","Sat May 09 16:39:31 CST 2026","200","tests","test_login","TestLoginScenarios","","","参数化登录用例: 标准用户登录成功","
+多账号登录场景验证
+:param driver: 浏览器驱动
+:param case: 测试数据，包含username\password\expected_title或expected_error
+"

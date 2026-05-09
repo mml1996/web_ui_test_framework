@@ -1,0 +1,12 @@
+2026-05-09 16:23:51.082 | INFO     | conftest:driver:49 - Initializing WebDriver
+2026-05-09 16:23:56.466 | INFO     | conftest:driver:64 - Quitting WebDriver
+2026-05-09 16:23:56.554 | INFO     | conftest:driver:49 - Initializing WebDriver
+2026-05-09 16:24:02.586 | ERROR    | conftest:pytest_runtest_makereport:103 - 用例失败，截图已保存: reports/screenshots/test_invalid_login_20260509162402.png
+2026-05-09 16:24:02.702 | INFO     | conftest:driver:64 - Quitting WebDriver
+2026-05-09 16:24:02.781 | INFO     | conftest:driver:49 - Initializing WebDriver
+2026-05-09 16:24:38.816 | INFO     | conftest:driver:64 - Quitting WebDriver
+2026-05-09 16:24:38.910 | INFO     | conftest:driver:49 - Initializing WebDriver
+2026-05-09 16:24:51.512 | INFO     | conftest:driver:64 - Quitting WebDriver
+2026-05-09 16:24:51.593 | INFO     | conftest:driver:49 - Initializing WebDriver
+2026-05-09 16:24:56.467 | ERROR    | conftest:pytest_runtest_makereport:103 - 用例失败，截图已保存: reports/screenshots/test_login_scenarios[case2]_20260509162456.png
+2026-05-09 16:24:56.581 | INFO     | conftest:driver:64 - Quitting WebDriver

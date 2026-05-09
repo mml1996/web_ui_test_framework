@@ -1,0 +1,9 @@
+2026-05-09 13:01:08.799 | INFO     | conftest:driver:44 - Initializing WebDriver
+2026-05-09 13:02:38.954 | INFO     | conftest:driver:48 - Quitting WebDriver
+2026-05-09 13:02:39.056 | INFO     | conftest:driver:44 - Initializing WebDriver
+2026-05-09 13:04:45.232 | INFO     | conftest:driver:44 - Initializing WebDriver
+2026-05-09 13:06:05.388 | INFO     | conftest:driver:48 - Quitting WebDriver
+2026-05-09 13:06:05.493 | INFO     | conftest:driver:44 - Initializing WebDriver
+2026-05-09 13:07:40.785 | INFO     | conftest:driver:48 - Quitting WebDriver
+2026-05-09 13:07:40.876 | INFO     | conftest:driver:44 - Initializing WebDriver
+2026-05-09 13:09:04.458 | INFO     | conftest:driver:48 - Quitting WebDriver

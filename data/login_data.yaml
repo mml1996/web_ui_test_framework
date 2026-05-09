@@ -1,0 +1,24 @@
+###   12.数据驱动测试
+
+##  做什么
+# 从外部文件读取测试数据，用pytest.mark.parametrize实现一组用例覆盖多组数据
+
+##  为什么这么做
+# 同一套测试逻辑覆盖多个账号，符合等价类和边界值测试思想
+# 新增测试数据只需修改yaml，零代码改动
+
+##  作用
+# 降低维护成本，提升用例覆盖度
+
+- name: 标准用户登录成功
+  username: "standard_user"
+  password: "secret_sauce"
+  expected_title: "Products"
+- name: 问题用户登录成功
+  username: "problem_user"
+  password: "secret_sauce"
+  expected_title: "Products"
+- name: 锁定用户登录失败
+  username: "locked_out_user"
+  password: "secret_sauce"
+  expected_error: "Epic sadface: Sorry, this user has been locked out"

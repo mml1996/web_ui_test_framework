@@ -1,0 +1,3 @@
+2026-05-09 15:59:28.935 | INFO     | conftest:driver:49 - Initializing WebDriver
+2026-05-09 15:59:37.790 | ERROR    | conftest:pytest_runtest_makereport:103 - 用例失败，截图已保存: reports/screenshots/test_login_scenarios[case1]_20260509155937.png
+2026-05-09 15:59:37.927 | INFO     | conftest:driver:64 - Quitting WebDriver

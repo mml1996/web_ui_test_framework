@@ -1,0 +1,10 @@
+2026-05-09 16:39:00.135 | INFO     | conftest:driver:49 - Initializing WebDriver
+2026-05-09 16:39:09.057 | INFO     | conftest:driver:64 - Quitting WebDriver
+2026-05-09 16:39:09.145 | INFO     | conftest:driver:49 - Initializing WebDriver
+2026-05-09 16:39:23.376 | INFO     | conftest:driver:64 - Quitting WebDriver
+2026-05-09 16:39:23.455 | INFO     | conftest:driver:49 - Initializing WebDriver
+2026-05-09 16:39:31.518 | INFO     | conftest:driver:64 - Quitting WebDriver
+2026-05-09 16:39:31.598 | INFO     | conftest:driver:49 - Initializing WebDriver
+2026-05-09 16:39:54.025 | ERROR    | conftest:driver:60 - 初始化浏览器失败: Could not reach host. Are you offline?
+2026-05-09 16:39:54.189 | INFO     | conftest:driver:49 - Initializing WebDriver
+2026-05-09 16:40:09.509 | INFO     | conftest:driver:64 - Quitting WebDriver
