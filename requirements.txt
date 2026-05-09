@@ -4,3 +4,5 @@ allure-pytest
 webdriver-manager
 loguru
 pyyaml
+pytest-html
+webdriver-manager
