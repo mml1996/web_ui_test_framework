@@ -1,42 +1,29 @@
-name: Web UI 自动化 CI
+name: UI Test CI
 
-# 触发条件：推送到 master 分支就自动运行
-on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+# 关键：只要推送到任何分支，都触发
+on: [push]
 
 jobs:
-  ui-test:
+  test:
     runs-on: ubuntu-latest
-
     steps:
-      - name: 拉取代码
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: 安装 Python
+      - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: "3.11"
 
-      - name: 安装依赖
+      - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: 安装 Chrome 浏览器 + 驱动
+      - name: Install Chrome & ChromeDriver
         run: |
           sudo apt-get update
           sudo apt-get install -y chromium-browser chromium-chromedriver
-          sudo ln -s /usr/lib/chromium-browser/chromedriver /usr/local/bin/chromedriver
 
-      - name: 运行自动化测试
+      - name: Run tests
         run: |
-          pytest tests/ --alluredir=allure-results
-
-      - name: 上传 Allure 测试报告
-        uses: actions/upload-artifact@v4
-        with:
-          name: allure-report
-          path: allure-results/
+          pytest tests/
