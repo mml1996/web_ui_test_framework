@@ -1,9 +1,7 @@
+"""
 ###  封装浏览器驱动工厂  ###
 
-#from pytest_selenium.drivers.chrome import chrome_options
-
 ###  做什么
-
 ###  根据配置动态创建webdriver实例，并自动下载驱动。
 
 ###  为什么这么做
@@ -12,21 +10,12 @@
 ###  自动处理驱动版本匹配，再无chromedriver版本不对的痛
 
 ###  作用
-###  同意入口，屏蔽细节，让测试代码不关心驱动从哪来，如何配置
+###  统一入口，屏蔽细节，让测试代码不关心驱动从哪来，如何配置
 """
-from selenium import webdriver
-from webdriver_manager.chrome import ChromeDriverManager
-from webdriver_manager.firefox import GeckoDriverManager
-from selenium.webdriver.chrome.service import Service as ChromeService
-from selenium.webdriver.firefox.service import Service as FirefoxService
-from utils.config_reader import config
-"""
-
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service as ChromeService
 from utils.config_reader import config
 from webdriver_manager.chrome import ChromeDriverManager
-from webdriver_manager.core.utils import ChromeType
 
 class DriverFactory:
     @staticmethod
@@ -50,14 +39,9 @@ class DriverFactory:
             # 设置页面加载策略
             chrome_options.set_capability("pageLoadStrategy", "eager")
 
-            # 使用国内镜像下载 ChromeDriver，解决网络问题
+            # 最稳定写法，无任何报错
             driver = webdriver.Chrome(
-                service=ChromeService(
-                    ChromeDriverManager(
-                        chrome_type=ChromeType.GOOGLE,
-                        url="https://npmmirror.com/mirrors/chromedriver/"
-                    ).install()
-                ),
+                service=ChromeService(ChromeDriverManager().install()),
                 options=chrome_options
             )
 
