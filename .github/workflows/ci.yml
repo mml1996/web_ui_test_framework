@@ -27,3 +27,6 @@ jobs:
 
       - name: Run UI Tests
         run: pytest tests/ -v
+        
+      - name: Generate Allure Report
+        run: pytest tests/ --alluredir=allure-results
