@@ -25,6 +25,8 @@ from utils.config_reader import config
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service as ChromeService
 from utils.config_reader import config
+from webdriver_manager.chrome import ChromeDriverManager
+from webdriver_manager.core.utils import ChromeType
 
 class DriverFactory:
     @staticmethod
@@ -36,7 +38,8 @@ class DriverFactory:
             from selenium.webdriver.chrome.options import Options as ChromeOptions
             chrome_options = ChromeOptions()
 
-            # Mac 防崩溃/卡死必加参数
+            # CI 环境必须加无头模式
+            chrome_options.add_argument("--headless=new")
             chrome_options.add_argument("--no-sandbox")
             chrome_options.add_argument("--disable-dev-shm-usage")
             chrome_options.add_argument("--disable-gpu")
@@ -44,12 +47,19 @@ class DriverFactory:
             chrome_options.add_argument("--disable-blink-features=AutomationControlled")
             chrome_options.add_argument("--disable-shared-memory")
 
-            # 关键：设置页面加载策略，避免无限等待页面资源
+            # 设置页面加载策略
             chrome_options.set_capability("pageLoadStrategy", "eager")
 
-            # 直接使用项目根目录下的 chromedriver
-            service = ChromeService(executable_path="./chromedriver")
-            driver = webdriver.Chrome(service=service, options=chrome_options)
+            # 使用国内镜像下载 ChromeDriver，解决网络问题
+            driver = webdriver.Chrome(
+                service=ChromeService(
+                    ChromeDriverManager(
+                        chrome_type=ChromeType.GOOGLE,
+                        url="https://npmmirror.com/mirrors/chromedriver/"
+                    ).install()
+                ),
+                options=chrome_options
+            )
 
         else:
             raise ValueError(f"Unsupported browser: {browser}")
@@ -60,7 +70,3 @@ class DriverFactory:
         driver.set_script_timeout(30)
 
         return driver
-#if __name__ == '__main__':
-#    driver = DriverFactory.get_driver()
- #   print('浏览器启动成功，当前页面标题：', driver.title)
-  #  driver.quit()
