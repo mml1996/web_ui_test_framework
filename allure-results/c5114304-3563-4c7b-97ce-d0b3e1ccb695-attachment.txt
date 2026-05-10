@@ -1,3 +1,0 @@
-2026-05-10 00:38:53.976 | INFO     | conftest:driver:50 - Initializing WebDriver
-2026-05-10 00:38:58.446 | INFO     | conftest:driver:61 - Successfully navigated to base URL: https://www.saucedemo.com
-2026-05-10 00:38:58.635 | INFO     | conftest:driver:71 - Quitting WebDriver

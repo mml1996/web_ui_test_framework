@@ -1,4 +1,0 @@
-2026-05-10 00:33:24.011 | INFO     | conftest:driver:50 - Initializing WebDriver
-2026-05-10 00:33:25.584 | INFO     | conftest:driver:61 - Successfully navigated to base URL: https://www.saucedemo.com
-2026-05-10 00:33:55.768 | ERROR    | conftest:pytest_runtest_makereport:110 - 用例失败，截图已保存: reports/screenshots/test_login_scenarios[case2]_20260510003355.png
-2026-05-10 00:33:55.863 | INFO     | conftest:driver:71 - Quitting WebDriver

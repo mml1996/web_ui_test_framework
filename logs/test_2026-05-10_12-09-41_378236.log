@@ -1,0 +1,93 @@
+2026-05-10 12:09:41.421 | INFO     | conftest:driver:50 - Initializing WebDriver
+2026-05-10 12:10:54.729 | ERROR    | conftest:driver:66 - 初始化浏览器失败: Message: timeout: Timed out receiving message from renderer: 29.481
+  (Session info: chrome=148.0.7778.97)
+Stacktrace:
+0   chromedriver                        0x00000001031505b0 cxxbridge1$str$ptr + 3217728
+1   chromedriver                        0x0000000103148488 cxxbridge1$str$ptr + 3184664
+2   chromedriver                        0x0000000102c0b9f0 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 75404
+3   chromedriver                        0x0000000102bf5d94 cxxbridge1$string$len + 4216
+4   chromedriver                        0x0000000102bf5a7c cxxbridge1$string$len + 3424
+5   chromedriver                        0x0000000102bf3640 chromedriver + 226880
+6   chromedriver                        0x0000000102bf4234 chromedriver + 229940
+7   chromedriver                        0x0000000102c01c58 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 35060
+8   chromedriver                        0x0000000102c18664 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 127744
+9   chromedriver                        0x0000000102bf48a0 chromedriver + 231584
+10  chromedriver                        0x0000000102c18460 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 127228
+11  chromedriver                        0x0000000102c93c54 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 633072
+12  chromedriver                        0x0000000102c49c10 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 329900
+13  chromedriver                        0x000000010310e1b0 cxxbridge1$str$ptr + 2946368
+14  chromedriver                        0x000000010311190c cxxbridge1$str$ptr + 2960540
+15  chromedriver                        0x00000001030f3100 cxxbridge1$str$ptr + 2835600
+16  chromedriver                        0x000000010311218c cxxbridge1$str$ptr + 2962716
+17  chromedriver                        0x00000001030e3bac cxxbridge1$str$ptr + 2772796
+18  chromedriver                        0x0000000103137258 cxxbridge1$str$ptr + 3114472
+19  chromedriver                        0x00000001031373b8 cxxbridge1$str$ptr + 3114824
+20  chromedriver                        0x00000001031480e0 cxxbridge1$str$ptr + 3183728
+21  libsystem_pthread.dylib             0x00000001855ac26c _pthread_start + 148
+22  libsystem_pthread.dylib             0x00000001855a708c thread_start + 8
+
+2026-05-10 12:10:54.731 | INFO     | conftest:driver:71 - Quitting WebDriver
+2026-05-10 12:10:54.877 | INFO     | conftest:driver:50 - Initializing WebDriver
+2026-05-10 12:11:27.571 | ERROR    | conftest:driver:66 - 初始化浏览器失败: Message: timeout: Timed out receiving message from renderer: 29.400
+  (Session info: chrome=148.0.7778.97)
+Stacktrace:
+0   chromedriver                        0x000000010098c5b0 cxxbridge1$str$ptr + 3217728
+1   chromedriver                        0x0000000100984488 cxxbridge1$str$ptr + 3184664
+2   chromedriver                        0x00000001004479f0 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 75404
+3   chromedriver                        0x0000000100431d94 cxxbridge1$string$len + 4216
+4   chromedriver                        0x0000000100431a7c cxxbridge1$string$len + 3424
+5   chromedriver                        0x000000010042f640 chromedriver + 226880
+6   chromedriver                        0x0000000100430234 chromedriver + 229940
+7   chromedriver                        0x000000010043dc58 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 35060
+8   chromedriver                        0x0000000100454664 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 127744
+9   chromedriver                        0x00000001004308a0 chromedriver + 231584
+10  chromedriver                        0x0000000100454460 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 127228
+11  chromedriver                        0x00000001004cfc54 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 633072
+12  chromedriver                        0x0000000100485c10 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 329900
+13  chromedriver                        0x000000010094a1b0 cxxbridge1$str$ptr + 2946368
+14  chromedriver                        0x000000010094d90c cxxbridge1$str$ptr + 2960540
+15  chromedriver                        0x000000010092f100 cxxbridge1$str$ptr + 2835600
+16  chromedriver                        0x000000010094e18c cxxbridge1$str$ptr + 2962716
+17  chromedriver                        0x000000010091fbac cxxbridge1$str$ptr + 2772796
+18  chromedriver                        0x0000000100973258 cxxbridge1$str$ptr + 3114472
+19  chromedriver                        0x00000001009733b8 cxxbridge1$str$ptr + 3114824
+20  chromedriver                        0x00000001009840e0 cxxbridge1$str$ptr + 3183728
+21  libsystem_pthread.dylib             0x00000001855ac26c _pthread_start + 148
+22  libsystem_pthread.dylib             0x00000001855a708c thread_start + 8
+
+2026-05-10 12:11:27.572 | INFO     | conftest:driver:71 - Quitting WebDriver
+2026-05-10 12:11:27.690 | INFO     | conftest:driver:50 - Initializing WebDriver
+2026-05-10 12:12:00.587 | ERROR    | conftest:driver:66 - 初始化浏览器失败: Message: timeout: Timed out receiving message from renderer: 29.489
+  (Session info: chrome=148.0.7778.97)
+Stacktrace:
+0   chromedriver                        0x00000001031c45b0 cxxbridge1$str$ptr + 3217728
+1   chromedriver                        0x00000001031bc488 cxxbridge1$str$ptr + 3184664
+2   chromedriver                        0x0000000102c7f9f0 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 75404
+3   chromedriver                        0x0000000102c69d94 cxxbridge1$string$len + 4216
+4   chromedriver                        0x0000000102c69a7c cxxbridge1$string$len + 3424
+5   chromedriver                        0x0000000102c67640 chromedriver + 226880
+6   chromedriver                        0x0000000102c68234 chromedriver + 229940
+7   chromedriver                        0x0000000102c75c58 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 35060
+8   chromedriver                        0x0000000102c8c664 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 127744
+9   chromedriver                        0x0000000102c688a0 chromedriver + 231584
+10  chromedriver                        0x0000000102c8c460 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 127228
+11  chromedriver                        0x0000000102d07c54 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 633072
+12  chromedriver                        0x0000000102cbdc10 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 329900
+13  chromedriver                        0x00000001031821b0 cxxbridge1$str$ptr + 2946368
+14  chromedriver                        0x000000010318590c cxxbridge1$str$ptr + 2960540
+15  chromedriver                        0x0000000103167100 cxxbridge1$str$ptr + 2835600
+16  chromedriver                        0x000000010318618c cxxbridge1$str$ptr + 2962716
+17  chromedriver                        0x0000000103157bac cxxbridge1$str$ptr + 2772796
+18  chromedriver                        0x00000001031ab258 cxxbridge1$str$ptr + 3114472
+19  chromedriver                        0x00000001031ab3b8 cxxbridge1$str$ptr + 3114824
+20  chromedriver                        0x00000001031bc0e0 cxxbridge1$str$ptr + 3183728
+21  libsystem_pthread.dylib             0x00000001855ac26c _pthread_start + 148
+22  libsystem_pthread.dylib             0x00000001855a708c thread_start + 8
+
+2026-05-10 12:12:00.589 | INFO     | conftest:driver:71 - Quitting WebDriver
+2026-05-10 12:12:00.711 | INFO     | conftest:driver:50 - Initializing WebDriver
+2026-05-10 12:12:08.433 | INFO     | conftest:driver:61 - Successfully navigated to base URL: https://www.saucedemo.com
+2026-05-10 12:12:08.646 | INFO     | conftest:driver:71 - Quitting WebDriver
+2026-05-10 12:12:08.725 | INFO     | conftest:driver:50 - Initializing WebDriver
+2026-05-10 12:12:24.272 | INFO     | conftest:driver:61 - Successfully navigated to base URL: https://www.saucedemo.com
+2026-05-10 12:12:24.472 | INFO     | conftest:driver:71 - Quitting WebDriver
