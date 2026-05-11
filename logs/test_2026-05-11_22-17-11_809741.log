@@ -1,0 +1,155 @@
+2026-05-11 22:17:11.876 | INFO     | conftest:driver:23 - === 开始初始化浏览器驱动 ===
+2026-05-11 22:17:18.063 | INFO     | conftest:driver:35 - 成功访问基础URL: https://www.saucedemo.com
+2026-05-11 22:17:18.064 | INFO     | conftest:cart_page:52 - === 开始执行cart_page fixture ===
+2026-05-11 22:17:18.064 | INFO     | conftest:cart_page:55 - 1. 开始登录系统
+2026-05-11 22:17:18.354 | INFO     | conftest:cart_page:59 - 已使用用户 standard_user 登录成功
+2026-05-11 22:17:18.356 | INFO     | conftest:cart_page:62 - 2. 开始清空购物车
+2026-05-11 22:17:39.224 | INFO     | conftest:cart_page:70 - 已清空购物车
+2026-05-11 22:17:39.225 | INFO     | conftest:cart_page:73 - 3. 开始添加商品到购物车
+2026-05-11 22:17:39.526 | INFO     | conftest:cart_page:79 - 已添加商品 "Sauce Labs Backpack" 到购物车
+2026-05-11 22:17:39.560 | INFO     | conftest:cart_page:83 - 已添加商品 "Sauce Labs Bolt T-Shirt" 到购物车
+2026-05-11 22:17:39.561 | INFO     | conftest:cart_page:86 - 4. 开始进入购物车页面
+2026-05-11 22:17:39.600 | INFO     | conftest:cart_page:88 - 已进入购物车页面
+2026-05-11 22:17:39.600 | INFO     | conftest:cart_page:92 - === cart_page fixture执行成功 ===
+2026-05-11 22:17:39.630 | INFO     | conftest:driver:45 - === 关闭浏览器驱动 ===
+2026-05-11 22:17:39.735 | INFO     | conftest:driver:23 - === 开始初始化浏览器驱动 ===
+2026-05-11 22:19:05.712 | INFO     | conftest:driver:35 - 成功访问基础URL: https://www.saucedemo.com
+2026-05-11 22:19:05.714 | INFO     | conftest:cart_page:52 - === 开始执行cart_page fixture ===
+2026-05-11 22:19:05.714 | INFO     | conftest:cart_page:55 - 1. 开始登录系统
+2026-05-11 22:19:05.982 | INFO     | conftest:cart_page:59 - 已使用用户 standard_user 登录成功
+2026-05-11 22:19:05.989 | INFO     | conftest:cart_page:62 - 2. 开始清空购物车
+2026-05-11 22:19:26.914 | INFO     | conftest:cart_page:70 - 已清空购物车
+2026-05-11 22:19:26.915 | INFO     | conftest:cart_page:73 - 3. 开始添加商品到购物车
+2026-05-11 22:19:27.207 | INFO     | conftest:cart_page:79 - 已添加商品 "Sauce Labs Backpack" 到购物车
+2026-05-11 22:19:27.242 | INFO     | conftest:cart_page:83 - 已添加商品 "Sauce Labs Bolt T-Shirt" 到购物车
+2026-05-11 22:19:27.242 | INFO     | conftest:cart_page:86 - 4. 开始进入购物车页面
+2026-05-11 22:19:27.280 | INFO     | conftest:cart_page:88 - 已进入购物车页面
+2026-05-11 22:19:27.280 | INFO     | conftest:cart_page:92 - === cart_page fixture执行成功 ===
+2026-05-11 22:19:47.419 | INFO     | conftest:driver:45 - === 关闭浏览器驱动 ===
+2026-05-11 22:19:47.519 | INFO     | conftest:driver:23 - === 开始初始化浏览器驱动 ===
+2026-05-11 22:19:53.123 | INFO     | conftest:driver:35 - 成功访问基础URL: https://www.saucedemo.com
+2026-05-11 22:19:53.124 | INFO     | conftest:cart_page:52 - === 开始执行cart_page fixture ===
+2026-05-11 22:19:53.124 | INFO     | conftest:cart_page:55 - 1. 开始登录系统
+2026-05-11 22:19:53.392 | INFO     | conftest:cart_page:59 - 已使用用户 standard_user 登录成功
+2026-05-11 22:19:53.405 | INFO     | conftest:cart_page:62 - 2. 开始清空购物车
+2026-05-11 22:20:14.465 | INFO     | conftest:cart_page:70 - 已清空购物车
+2026-05-11 22:20:14.467 | INFO     | conftest:cart_page:73 - 3. 开始添加商品到购物车
+2026-05-11 22:20:14.727 | INFO     | conftest:cart_page:79 - 已添加商品 "Sauce Labs Backpack" 到购物车
+2026-05-11 22:20:14.764 | INFO     | conftest:cart_page:83 - 已添加商品 "Sauce Labs Bolt T-Shirt" 到购物车
+2026-05-11 22:20:14.764 | INFO     | conftest:cart_page:86 - 4. 开始进入购物车页面
+2026-05-11 22:20:14.803 | INFO     | conftest:cart_page:88 - 已进入购物车页面
+2026-05-11 22:20:14.803 | INFO     | conftest:cart_page:92 - === cart_page fixture执行成功 ===
+2026-05-11 22:20:54.979 | INFO     | conftest:driver:45 - === 关闭浏览器驱动 ===
+2026-05-11 22:20:55.082 | INFO     | conftest:driver:23 - === 开始初始化浏览器驱动 ===
+2026-05-11 22:21:02.185 | INFO     | conftest:driver:35 - 成功访问基础URL: https://www.saucedemo.com
+2026-05-11 22:21:02.186 | INFO     | conftest:cart_page:52 - === 开始执行cart_page fixture ===
+2026-05-11 22:21:02.186 | INFO     | conftest:cart_page:55 - 1. 开始登录系统
+2026-05-11 22:21:02.458 | INFO     | conftest:cart_page:59 - 已使用用户 standard_user 登录成功
+2026-05-11 22:21:02.462 | INFO     | conftest:cart_page:62 - 2. 开始清空购物车
+2026-05-11 22:21:23.415 | INFO     | conftest:cart_page:70 - 已清空购物车
+2026-05-11 22:21:23.416 | INFO     | conftest:cart_page:73 - 3. 开始添加商品到购物车
+2026-05-11 22:21:23.711 | INFO     | conftest:cart_page:79 - 已添加商品 "Sauce Labs Backpack" 到购物车
+2026-05-11 22:21:23.745 | INFO     | conftest:cart_page:83 - 已添加商品 "Sauce Labs Bolt T-Shirt" 到购物车
+2026-05-11 22:21:23.745 | INFO     | conftest:cart_page:86 - 4. 开始进入购物车页面
+2026-05-11 22:21:23.787 | INFO     | conftest:cart_page:88 - 已进入购物车页面
+2026-05-11 22:21:23.787 | INFO     | conftest:cart_page:92 - === cart_page fixture执行成功 ===
+2026-05-11 22:21:23.792 | INFO     | conftest:driver:45 - === 关闭浏览器驱动 ===
+2026-05-11 22:21:23.898 | INFO     | conftest:driver:23 - === 开始初始化浏览器驱动 ===
+2026-05-11 22:21:29.114 | INFO     | conftest:driver:35 - 成功访问基础URL: https://www.saucedemo.com
+2026-05-11 22:21:29.115 | INFO     | conftest:cart_page:52 - === 开始执行cart_page fixture ===
+2026-05-11 22:21:29.115 | INFO     | conftest:cart_page:55 - 1. 开始登录系统
+2026-05-11 22:21:29.375 | INFO     | conftest:cart_page:59 - 已使用用户 standard_user 登录成功
+2026-05-11 22:21:29.375 | INFO     | conftest:cart_page:62 - 2. 开始清空购物车
+2026-05-11 22:21:50.093 | INFO     | conftest:cart_page:70 - 已清空购物车
+2026-05-11 22:21:50.095 | INFO     | conftest:cart_page:73 - 3. 开始添加商品到购物车
+2026-05-11 22:21:50.393 | INFO     | conftest:cart_page:79 - 已添加商品 "Sauce Labs Backpack" 到购物车
+2026-05-11 22:21:50.427 | INFO     | conftest:cart_page:83 - 已添加商品 "Sauce Labs Bolt T-Shirt" 到购物车
+2026-05-11 22:21:50.427 | INFO     | conftest:cart_page:86 - 4. 开始进入购物车页面
+2026-05-11 22:21:50.466 | INFO     | conftest:cart_page:88 - 已进入购物车页面
+2026-05-11 22:21:50.466 | INFO     | conftest:cart_page:92 - === cart_page fixture执行成功 ===
+2026-05-11 22:22:10.635 | INFO     | conftest:driver:45 - === 关闭浏览器驱动 ===
+2026-05-11 22:22:10.740 | INFO     | conftest:driver:23 - === 开始初始化浏览器驱动 ===
+2026-05-11 22:22:18.005 | INFO     | conftest:driver:35 - 成功访问基础URL: https://www.saucedemo.com
+2026-05-11 22:22:18.006 | INFO     | conftest:cart_page:52 - === 开始执行cart_page fixture ===
+2026-05-11 22:22:18.006 | INFO     | conftest:cart_page:55 - 1. 开始登录系统
+2026-05-11 22:22:18.275 | INFO     | conftest:cart_page:59 - 已使用用户 standard_user 登录成功
+2026-05-11 22:22:18.275 | INFO     | conftest:cart_page:62 - 2. 开始清空购物车
+2026-05-11 22:22:39.698 | INFO     | conftest:cart_page:70 - 已清空购物车
+2026-05-11 22:22:39.699 | INFO     | conftest:cart_page:73 - 3. 开始添加商品到购物车
+2026-05-11 22:22:39.989 | INFO     | conftest:cart_page:79 - 已添加商品 "Sauce Labs Backpack" 到购物车
+2026-05-11 22:22:40.025 | INFO     | conftest:cart_page:83 - 已添加商品 "Sauce Labs Bolt T-Shirt" 到购物车
+2026-05-11 22:22:40.025 | INFO     | conftest:cart_page:86 - 4. 开始进入购物车页面
+2026-05-11 22:22:40.063 | INFO     | conftest:cart_page:88 - 已进入购物车页面
+2026-05-11 22:22:40.064 | INFO     | conftest:cart_page:92 - === cart_page fixture执行成功 ===
+2026-05-11 22:23:00.168 | INFO     | conftest:driver:45 - === 关闭浏览器驱动 ===
+2026-05-11 22:23:00.273 | INFO     | conftest:driver:23 - === 开始初始化浏览器驱动 ===
+2026-05-11 22:23:20.079 | INFO     | conftest:driver:35 - 成功访问基础URL: https://www.saucedemo.com
+2026-05-11 22:23:20.080 | INFO     | conftest:cart_page:52 - === 开始执行cart_page fixture ===
+2026-05-11 22:23:20.080 | INFO     | conftest:cart_page:55 - 1. 开始登录系统
+2026-05-11 22:23:20.361 | INFO     | conftest:cart_page:59 - 已使用用户 standard_user 登录成功
+2026-05-11 22:23:20.370 | INFO     | conftest:cart_page:62 - 2. 开始清空购物车
+2026-05-11 22:23:41.114 | INFO     | conftest:cart_page:70 - 已清空购物车
+2026-05-11 22:23:41.115 | INFO     | conftest:cart_page:73 - 3. 开始添加商品到购物车
+2026-05-11 22:23:41.872 | INFO     | conftest:cart_page:79 - 已添加商品 "Sauce Labs Backpack" 到购物车
+2026-05-11 22:23:41.906 | INFO     | conftest:cart_page:83 - 已添加商品 "Sauce Labs Bolt T-Shirt" 到购物车
+2026-05-11 22:23:41.906 | INFO     | conftest:cart_page:86 - 4. 开始进入购物车页面
+2026-05-11 22:23:41.949 | INFO     | conftest:cart_page:88 - 已进入购物车页面
+2026-05-11 22:23:41.949 | INFO     | conftest:cart_page:92 - === cart_page fixture执行成功 ===
+2026-05-11 22:23:42.011 | INFO     | conftest:driver:45 - === 关闭浏览器驱动 ===
+2026-05-11 22:23:42.117 | INFO     | conftest:driver:23 - === 开始初始化浏览器驱动 ===
+2026-05-11 22:23:51.750 | INFO     | conftest:driver:35 - 成功访问基础URL: https://www.saucedemo.com
+2026-05-11 22:23:51.752 | INFO     | conftest:cart_page:52 - === 开始执行cart_page fixture ===
+2026-05-11 22:23:51.752 | INFO     | conftest:cart_page:55 - 1. 开始登录系统
+2026-05-11 22:23:52.015 | INFO     | conftest:cart_page:59 - 已使用用户 standard_user 登录成功
+2026-05-11 22:23:52.015 | INFO     | conftest:cart_page:62 - 2. 开始清空购物车
+2026-05-11 22:24:12.972 | INFO     | conftest:cart_page:70 - 已清空购物车
+2026-05-11 22:24:12.973 | INFO     | conftest:cart_page:73 - 3. 开始添加商品到购物车
+2026-05-11 22:24:13.237 | INFO     | conftest:cart_page:79 - 已添加商品 "Sauce Labs Backpack" 到购物车
+2026-05-11 22:24:13.271 | INFO     | conftest:cart_page:83 - 已添加商品 "Sauce Labs Bolt T-Shirt" 到购物车
+2026-05-11 22:24:13.271 | INFO     | conftest:cart_page:86 - 4. 开始进入购物车页面
+2026-05-11 22:24:13.308 | INFO     | conftest:cart_page:88 - 已进入购物车页面
+2026-05-11 22:24:13.308 | INFO     | conftest:cart_page:92 - === cart_page fixture执行成功 ===
+2026-05-11 22:24:13.935 | INFO     | conftest:driver:45 - === 关闭浏览器驱动 ===
+2026-05-11 22:24:14.045 | INFO     | conftest:driver:23 - === 开始初始化浏览器驱动 ===
+2026-05-11 22:24:23.667 | INFO     | conftest:driver:35 - 成功访问基础URL: https://www.saucedemo.com
+2026-05-11 22:24:23.670 | INFO     | conftest:cart_page:52 - === 开始执行cart_page fixture ===
+2026-05-11 22:24:23.670 | INFO     | conftest:cart_page:55 - 1. 开始登录系统
+2026-05-11 22:24:23.941 | INFO     | conftest:cart_page:59 - 已使用用户 standard_user 登录成功
+2026-05-11 22:24:23.941 | INFO     | conftest:cart_page:62 - 2. 开始清空购物车
+2026-05-11 22:24:45.197 | INFO     | conftest:cart_page:70 - 已清空购物车
+2026-05-11 22:24:45.199 | INFO     | conftest:cart_page:73 - 3. 开始添加商品到购物车
+2026-05-11 22:24:46.926 | INFO     | conftest:cart_page:79 - 已添加商品 "Sauce Labs Backpack" 到购物车
+2026-05-11 22:24:46.961 | INFO     | conftest:cart_page:83 - 已添加商品 "Sauce Labs Bolt T-Shirt" 到购物车
+2026-05-11 22:24:46.961 | INFO     | conftest:cart_page:86 - 4. 开始进入购物车页面
+2026-05-11 22:24:47.003 | INFO     | conftest:cart_page:88 - 已进入购物车页面
+2026-05-11 22:24:47.003 | INFO     | conftest:cart_page:92 - === cart_page fixture执行成功 ===
+2026-05-11 22:24:47.897 | ERROR    | conftest:pytest_runtest_makereport:118 - 用例 test_proceed_to_checkout 失败，截图已保存: reports/screenshots/test_proceed_to_checkout_20260511222447.png
+2026-05-11 22:24:48.462 | INFO     | conftest:driver:45 - === 关闭浏览器驱动 ===
+2026-05-11 22:24:48.567 | INFO     | conftest:driver:23 - === 开始初始化浏览器驱动 ===
+2026-05-11 22:24:55.935 | INFO     | conftest:driver:35 - 成功访问基础URL: https://www.saucedemo.com
+2026-05-11 22:24:55.936 | INFO     | conftest:cart_page:52 - === 开始执行cart_page fixture ===
+2026-05-11 22:24:55.936 | INFO     | conftest:cart_page:55 - 1. 开始登录系统
+2026-05-11 22:24:56.198 | INFO     | conftest:cart_page:59 - 已使用用户 standard_user 登录成功
+2026-05-11 22:24:56.198 | INFO     | conftest:cart_page:62 - 2. 开始清空购物车
+2026-05-11 22:25:17.778 | INFO     | conftest:cart_page:70 - 已清空购物车
+2026-05-11 22:25:17.779 | INFO     | conftest:cart_page:73 - 3. 开始添加商品到购物车
+2026-05-11 22:25:18.072 | INFO     | conftest:cart_page:79 - 已添加商品 "Sauce Labs Backpack" 到购物车
+2026-05-11 22:25:18.109 | INFO     | conftest:cart_page:83 - 已添加商品 "Sauce Labs Bolt T-Shirt" 到购物车
+2026-05-11 22:25:18.109 | INFO     | conftest:cart_page:86 - 4. 开始进入购物车页面
+2026-05-11 22:25:18.147 | INFO     | conftest:cart_page:88 - 已进入购物车页面
+2026-05-11 22:25:18.147 | INFO     | conftest:cart_page:92 - === cart_page fixture执行成功 ===
+2026-05-11 22:25:18.160 | INFO     | conftest:driver:45 - === 关闭浏览器驱动 ===
+2026-05-11 22:25:18.266 | INFO     | conftest:driver:23 - === 开始初始化浏览器驱动 ===
+2026-05-11 22:25:26.620 | INFO     | conftest:driver:35 - 成功访问基础URL: https://www.saucedemo.com
+2026-05-11 22:25:26.621 | INFO     | conftest:cart_page:52 - === 开始执行cart_page fixture ===
+2026-05-11 22:25:26.621 | INFO     | conftest:cart_page:55 - 1. 开始登录系统
+2026-05-11 22:25:26.880 | INFO     | conftest:cart_page:59 - 已使用用户 standard_user 登录成功
+2026-05-11 22:25:26.880 | INFO     | conftest:cart_page:62 - 2. 开始清空购物车
+2026-05-11 22:25:48.450 | INFO     | conftest:cart_page:70 - 已清空购物车
+2026-05-11 22:25:48.450 | INFO     | conftest:cart_page:73 - 3. 开始添加商品到购物车
+2026-05-11 22:25:48.739 | INFO     | conftest:cart_page:79 - 已添加商品 "Sauce Labs Backpack" 到购物车
+2026-05-11 22:25:48.774 | INFO     | conftest:cart_page:83 - 已添加商品 "Sauce Labs Bolt T-Shirt" 到购物车
+2026-05-11 22:25:48.774 | INFO     | conftest:cart_page:86 - 4. 开始进入购物车页面
+2026-05-11 22:25:48.811 | INFO     | conftest:cart_page:88 - 已进入购物车页面
+2026-05-11 22:25:48.811 | INFO     | conftest:cart_page:92 - === cart_page fixture执行成功 ===
+2026-05-11 22:26:29.184 | INFO     | conftest:driver:45 - === 关闭浏览器驱动 ===

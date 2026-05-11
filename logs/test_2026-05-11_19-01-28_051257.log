@@ -1,0 +1,6 @@
+2026-05-11 19:01:28.110 | INFO     | conftest:driver:23 - === 开始初始化浏览器驱动 ===
+2026-05-11 19:01:36.072 | INFO     | conftest:driver:35 - 成功访问基础URL: https://www.saucedemo.com
+2026-05-11 19:01:36.074 | INFO     | conftest:cart_page:56 - === 开始执行cart_page fixture ===
+2026-05-11 19:01:36.075 | INFO     | conftest:cart_page:59 - 1. 开始登录系统
+2026-05-11 19:01:36.093 | ERROR    | conftest:cart_page:97 - === cart_page fixture执行失败 ===
+2026-05-11 19:01:36.137 | INFO     | conftest:driver:45 - === 关闭浏览器驱动 ===

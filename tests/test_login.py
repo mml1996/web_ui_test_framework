@@ -16,8 +16,8 @@ import pytest
 from pages.inventory_page import InventoryPage
 from pages.login_page import LoginPage
 
-@allure.epic('saucedemo电商Web UI自动化测试框架')
-@allure.feature('登录模块')
+@allure.epic('SauceDemo Web UI')
+@allure.feature('登录页面')
 class TestLogin:
     @allure.story('标准用户登录')
     @allure.title('验证标准用户可以成功登录系统')
@@ -53,8 +53,8 @@ def load_login_data():
     with open(data_path, encoding='utf-8') as f:
         return yaml.safe_load(f)
 
-@allure.epic('saucedemo电商Web UI自动化测试框架')
-@allure.feature('登录模块')
+@allure.epic('SauceDemo Web UI')
+@allure.feature('登录页面')
 class TestLoginScenarios:
     @allure.story('多账号登录场景验证')
     @allure.title('参数化登录用例: {case[name]}')

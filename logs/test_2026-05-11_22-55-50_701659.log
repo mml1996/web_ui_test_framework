@@ -1,0 +1,4 @@
+2026-05-11 22:55:50.761 | INFO     | conftest:driver:23 - === 开始初始化浏览器驱动 ===
+2026-05-11 22:55:59.270 | INFO     | conftest:driver:35 - 成功访问基础URL: https://www.saucedemo.com
+2026-05-11 22:56:30.245 | ERROR    | conftest:pytest_runtest_makereport:118 - 用例 test_invalid_login 失败，截图已保存: reports/screenshots/test_invalid_login_20260511225629.png
+2026-05-11 22:56:30.812 | INFO     | conftest:driver:45 - === 关闭浏览器驱动 ===

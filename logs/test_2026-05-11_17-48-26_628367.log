@@ -1,0 +1,32 @@
+2026-05-11 17:48:26.707 | INFO     | conftest:driver:51 - === 开始初始化浏览器驱动 ===
+2026-05-11 17:48:32.453 | INFO     | conftest:driver:62 - 成功访问基础URL: https://www.saucedemo.com
+2026-05-11 17:48:32.551 | INFO     | conftest:driver:72 - === 关闭浏览器驱动 ===
+2026-05-11 17:48:32.657 | INFO     | conftest:driver:51 - === 开始初始化浏览器驱动 ===
+2026-05-11 17:48:36.548 | INFO     | conftest:driver:62 - 成功访问基础URL: https://www.saucedemo.com
+2026-05-11 17:48:36.602 | INFO     | conftest:driver:72 - === 关闭浏览器驱动 ===
+2026-05-11 17:48:36.695 | INFO     | conftest:driver:51 - === 开始初始化浏览器驱动 ===
+2026-05-11 17:48:44.946 | INFO     | conftest:driver:62 - 成功访问基础URL: https://www.saucedemo.com
+2026-05-11 17:48:45.001 | INFO     | conftest:driver:72 - === 关闭浏览器驱动 ===
+2026-05-11 17:48:45.094 | INFO     | conftest:driver:51 - === 开始初始化浏览器驱动 ===
+2026-05-11 17:48:49.620 | INFO     | conftest:driver:62 - 成功访问基础URL: https://www.saucedemo.com
+2026-05-11 17:48:49.677 | INFO     | conftest:driver:72 - === 关闭浏览器驱动 ===
+2026-05-11 17:48:49.771 | INFO     | conftest:driver:51 - === 开始初始化浏览器驱动 ===
+2026-05-11 17:50:26.045 | INFO     | conftest:driver:62 - 成功访问基础URL: https://www.saucedemo.com
+2026-05-11 17:50:26.117 | INFO     | conftest:driver:72 - === 关闭浏览器驱动 ===
+2026-05-11 17:50:26.212 | INFO     | conftest:driver:51 - === 开始初始化浏览器驱动 ===
+2026-05-11 17:50:32.261 | INFO     | conftest:driver:62 - 成功访问基础URL: https://www.saucedemo.com
+2026-05-11 17:50:32.328 | INFO     | conftest:driver:72 - === 关闭浏览器驱动 ===
+2026-05-11 17:50:32.423 | INFO     | conftest:driver:51 - === 开始初始化浏览器驱动 ===
+2026-05-11 17:50:46.890 | INFO     | conftest:driver:62 - 成功访问基础URL: https://www.saucedemo.com
+2026-05-11 17:50:46.953 | INFO     | conftest:driver:72 - === 关闭浏览器驱动 ===
+2026-05-11 17:50:47.044 | INFO     | conftest:driver:51 - === 开始初始化浏览器驱动 ===
+2026-05-11 17:51:02.973 | INFO     | conftest:driver:62 - 成功访问基础URL: https://www.saucedemo.com
+2026-05-11 17:51:03.040 | INFO     | conftest:driver:72 - === 关闭浏览器驱动 ===
+2026-05-11 17:51:03.135 | INFO     | conftest:driver:51 - === 开始初始化浏览器驱动 ===
+2026-05-11 17:51:40.413 | ERROR    | conftest:driver:67 - 初始化浏览器失败: Could not reach host. Are you offline?
+2026-05-11 17:51:40.661 | INFO     | conftest:driver:51 - === 开始初始化浏览器驱动 ===
+2026-05-11 17:51:46.581 | INFO     | conftest:driver:62 - 成功访问基础URL: https://www.saucedemo.com
+2026-05-11 17:51:46.652 | INFO     | conftest:driver:72 - === 关闭浏览器驱动 ===
+2026-05-11 17:51:46.747 | INFO     | conftest:driver:51 - === 开始初始化浏览器驱动 ===
+2026-05-11 17:51:52.147 | INFO     | conftest:driver:62 - 成功访问基础URL: https://www.saucedemo.com
+2026-05-11 17:51:52.231 | INFO     | conftest:driver:72 - === 关闭浏览器驱动 ===

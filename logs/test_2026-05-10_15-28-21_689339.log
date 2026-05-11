@@ -1,0 +1,14 @@
+2026-05-10 15:28:21.755 | INFO     | conftest:driver:50 - Initializing WebDriver
+2026-05-10 15:31:21.776 | ERROR    | conftest:driver:66 - 初始化浏览器失败: Could not reach host. Are you offline?
+2026-05-10 15:31:22.040 | INFO     | conftest:driver:50 - Initializing WebDriver
+2026-05-10 15:31:32.615 | INFO     | conftest:driver:61 - Successfully navigated to base URL: https://www.saucedemo.com
+2026-05-10 15:31:32.934 | INFO     | conftest:driver:71 - Quitting WebDriver
+2026-05-10 15:31:33.035 | INFO     | conftest:driver:50 - Initializing WebDriver
+2026-05-10 15:31:41.509 | INFO     | conftest:driver:61 - Successfully navigated to base URL: https://www.saucedemo.com
+2026-05-10 15:31:42.401 | INFO     | conftest:driver:71 - Quitting WebDriver
+2026-05-10 15:31:42.667 | INFO     | conftest:driver:50 - Initializing WebDriver
+2026-05-10 15:31:51.048 | INFO     | conftest:driver:61 - Successfully navigated to base URL: https://www.saucedemo.com
+2026-05-10 15:31:52.243 | INFO     | conftest:driver:71 - Quitting WebDriver
+2026-05-10 15:31:52.366 | INFO     | conftest:driver:50 - Initializing WebDriver
+2026-05-10 15:31:58.030 | INFO     | conftest:driver:61 - Successfully navigated to base URL: https://www.saucedemo.com
+2026-05-10 15:31:58.298 | INFO     | conftest:driver:71 - Quitting WebDriver

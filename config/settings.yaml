@@ -10,11 +10,12 @@
 ###  yaml可读性好，支持复杂数据结构
 
 
-
 browser: chrome
+headless: false
 base_url: https://www.saucedemo.com
 timeout: 20
-
+username: standard_user
+password: secret_sauce
 
 
 

@@ -1,0 +1,15 @@
+2026-05-11 10:47:14.772 | INFO     | conftest:driver:50 - Initializing WebDriver
+2026-05-11 10:58:27.980 | INFO     | conftest:driver:61 - Successfully navigated to base URL: https://www.saucedemo.com
+2026-05-11 10:58:28.188 | INFO     | conftest:driver:71 - Quitting WebDriver
+2026-05-11 10:58:28.276 | INFO     | conftest:driver:50 - Initializing WebDriver
+2026-05-11 10:58:34.323 | INFO     | conftest:driver:61 - Successfully navigated to base URL: https://www.saucedemo.com
+2026-05-11 10:58:34.495 | INFO     | conftest:driver:71 - Quitting WebDriver
+2026-05-11 10:58:34.574 | INFO     | conftest:driver:50 - Initializing WebDriver
+2026-05-11 10:58:42.039 | INFO     | conftest:driver:61 - Successfully navigated to base URL: https://www.saucedemo.com
+2026-05-11 10:58:42.237 | INFO     | conftest:driver:71 - Quitting WebDriver
+2026-05-11 10:58:42.330 | INFO     | conftest:driver:50 - Initializing WebDriver
+2026-05-11 10:58:48.023 | INFO     | conftest:driver:61 - Successfully navigated to base URL: https://www.saucedemo.com
+2026-05-11 10:58:48.214 | INFO     | conftest:driver:71 - Quitting WebDriver
+2026-05-11 10:58:48.293 | INFO     | conftest:driver:50 - Initializing WebDriver
+2026-05-11 10:58:58.408 | INFO     | conftest:driver:61 - Successfully navigated to base URL: https://www.saucedemo.com
+2026-05-11 10:58:58.664 | INFO     | conftest:driver:71 - Quitting WebDriver

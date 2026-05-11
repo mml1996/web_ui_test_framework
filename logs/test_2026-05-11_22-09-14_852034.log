@@ -1,0 +1,132 @@
+2026-05-11 22:09:14.928 | INFO     | conftest:driver:23 - === 开始初始化浏览器驱动 ===
+2026-05-11 22:10:06.417 | INFO     | conftest:driver:35 - 成功访问基础URL: https://www.saucedemo.com
+2026-05-11 22:10:06.419 | INFO     | conftest:cart_page:52 - === 开始执行cart_page fixture ===
+2026-05-11 22:10:06.419 | INFO     | conftest:cart_page:55 - 1. 开始登录系统
+2026-05-11 22:10:06.715 | INFO     | conftest:cart_page:59 - 已使用用户 standard_user 登录成功
+2026-05-11 22:10:06.730 | INFO     | conftest:cart_page:62 - 2. 开始清空购物车
+2026-05-11 22:10:28.329 | INFO     | conftest:cart_page:70 - 已清空购物车
+2026-05-11 22:10:28.330 | INFO     | conftest:cart_page:73 - 3. 开始添加商品到购物车
+2026-05-11 22:10:29.993 | INFO     | conftest:cart_page:79 - 已添加商品 "Sauce Labs Backpack" 到购物车
+2026-05-11 22:10:30.029 | INFO     | conftest:cart_page:83 - 已添加商品 "Sauce Labs Bolt T-Shirt" 到购物车
+2026-05-11 22:10:30.029 | INFO     | conftest:cart_page:86 - 4. 开始进入购物车页面
+2026-05-11 22:10:30.072 | INFO     | conftest:cart_page:88 - 已进入购物车页面
+2026-05-11 22:10:30.072 | INFO     | conftest:cart_page:92 - === cart_page fixture执行成功 ===
+2026-05-11 22:10:30.097 | INFO     | conftest:driver:45 - === 关闭浏览器驱动 ===
+2026-05-11 22:10:30.203 | INFO     | conftest:driver:23 - === 开始初始化浏览器驱动 ===
+2026-05-11 22:10:40.291 | INFO     | conftest:driver:35 - 成功访问基础URL: https://www.saucedemo.com
+2026-05-11 22:10:40.292 | INFO     | conftest:cart_page:52 - === 开始执行cart_page fixture ===
+2026-05-11 22:10:40.292 | INFO     | conftest:cart_page:55 - 1. 开始登录系统
+2026-05-11 22:10:40.563 | INFO     | conftest:cart_page:59 - 已使用用户 standard_user 登录成功
+2026-05-11 22:10:40.564 | INFO     | conftest:cart_page:62 - 2. 开始清空购物车
+2026-05-11 22:11:03.863 | INFO     | conftest:cart_page:70 - 已清空购物车
+2026-05-11 22:11:03.864 | INFO     | conftest:cart_page:73 - 3. 开始添加商品到购物车
+2026-05-11 22:11:14.677 | INFO     | conftest:cart_page:79 - 已添加商品 "Sauce Labs Backpack" 到购物车
+2026-05-11 22:11:14.711 | INFO     | conftest:cart_page:83 - 已添加商品 "Sauce Labs Bolt T-Shirt" 到购物车
+2026-05-11 22:11:14.711 | INFO     | conftest:cart_page:86 - 4. 开始进入购物车页面
+2026-05-11 22:11:14.749 | INFO     | conftest:cart_page:88 - 已进入购物车页面
+2026-05-11 22:11:14.749 | INFO     | conftest:cart_page:92 - === cart_page fixture执行成功 ===
+2026-05-11 22:11:34.880 | INFO     | conftest:driver:45 - === 关闭浏览器驱动 ===
+2026-05-11 22:11:34.990 | INFO     | conftest:driver:23 - === 开始初始化浏览器驱动 ===
+2026-05-11 22:12:38.836 | ERROR    | conftest:driver:40 - 浏览器初始化失败: Message: timeout: Timed out receiving message from renderer: 58.209
+  (Session info: chrome=148.0.7778.97)
+Stacktrace:
+0   chromedriver                        0x000000010548c5b0 cxxbridge1$str$ptr + 3217728
+1   chromedriver                        0x0000000105484488 cxxbridge1$str$ptr + 3184664
+2   chromedriver                        0x0000000104f479f0 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 75404
+3   chromedriver                        0x0000000104f31d94 cxxbridge1$string$len + 4216
+4   chromedriver                        0x0000000104f31a7c cxxbridge1$string$len + 3424
+5   chromedriver                        0x0000000104f2f640 chromedriver + 226880
+6   chromedriver                        0x0000000104f30234 chromedriver + 229940
+7   chromedriver                        0x0000000104f3dc58 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 35060
+8   chromedriver                        0x0000000104f54664 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 127744
+9   chromedriver                        0x0000000104f308a0 chromedriver + 231584
+10  chromedriver                        0x0000000104f54460 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 127228
+11  chromedriver                        0x0000000104fcfc54 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 633072
+12  chromedriver                        0x0000000104f85c10 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 329900
+13  chromedriver                        0x000000010544a1b0 cxxbridge1$str$ptr + 2946368
+14  chromedriver                        0x000000010544d90c cxxbridge1$str$ptr + 2960540
+15  chromedriver                        0x000000010542f100 cxxbridge1$str$ptr + 2835600
+16  chromedriver                        0x000000010544e18c cxxbridge1$str$ptr + 2962716
+17  chromedriver                        0x000000010541fbac cxxbridge1$str$ptr + 2772796
+18  chromedriver                        0x0000000105473258 cxxbridge1$str$ptr + 3114472
+19  chromedriver                        0x00000001054733b8 cxxbridge1$str$ptr + 3114824
+20  chromedriver                        0x00000001054840e0 cxxbridge1$str$ptr + 3183728
+21  libsystem_pthread.dylib             0x00000001855ac26c _pthread_start + 148
+22  libsystem_pthread.dylib             0x00000001855a708c thread_start + 8
+
+2026-05-11 22:12:38.850 | INFO     | conftest:driver:45 - === 关闭浏览器驱动 ===
+2026-05-11 22:12:39.009 | INFO     | conftest:driver:23 - === 开始初始化浏览器驱动 ===
+2026-05-11 22:12:56.621 | ERROR    | conftest:driver:40 - 浏览器初始化失败: Could not reach host. Are you offline?
+2026-05-11 22:12:56.811 | INFO     | conftest:driver:23 - === 开始初始化浏览器驱动 ===
+2026-05-11 22:13:03.680 | INFO     | conftest:driver:35 - 成功访问基础URL: https://www.saucedemo.com
+2026-05-11 22:13:03.682 | INFO     | conftest:cart_page:52 - === 开始执行cart_page fixture ===
+2026-05-11 22:13:03.682 | INFO     | conftest:cart_page:55 - 1. 开始登录系统
+2026-05-11 22:13:03.952 | INFO     | conftest:cart_page:59 - 已使用用户 standard_user 登录成功
+2026-05-11 22:13:03.952 | INFO     | conftest:cart_page:62 - 2. 开始清空购物车
+2026-05-11 22:13:25.493 | INFO     | conftest:cart_page:70 - 已清空购物车
+2026-05-11 22:13:25.495 | INFO     | conftest:cart_page:73 - 3. 开始添加商品到购物车
+2026-05-11 22:13:26.367 | INFO     | conftest:cart_page:79 - 已添加商品 "Sauce Labs Backpack" 到购物车
+2026-05-11 22:13:26.401 | INFO     | conftest:cart_page:83 - 已添加商品 "Sauce Labs Bolt T-Shirt" 到购物车
+2026-05-11 22:13:26.401 | INFO     | conftest:cart_page:86 - 4. 开始进入购物车页面
+2026-05-11 22:13:26.445 | INFO     | conftest:cart_page:88 - 已进入购物车页面
+2026-05-11 22:13:26.445 | INFO     | conftest:cart_page:92 - === cart_page fixture执行成功 ===
+2026-05-11 22:13:46.623 | INFO     | conftest:driver:45 - === 关闭浏览器驱动 ===
+2026-05-11 22:13:46.733 | INFO     | conftest:driver:23 - === 开始初始化浏览器驱动 ===
+2026-05-11 22:15:14.143 | ERROR    | conftest:driver:40 - 浏览器初始化失败: Message: timeout: Timed out receiving message from renderer: 51.657
+  (Session info: chrome=148.0.7778.97)
+Stacktrace:
+0   chromedriver                        0x00000001027a85b0 cxxbridge1$str$ptr + 3217728
+1   chromedriver                        0x00000001027a0488 cxxbridge1$str$ptr + 3184664
+2   chromedriver                        0x00000001022639f0 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 75404
+3   chromedriver                        0x000000010224dd94 cxxbridge1$string$len + 4216
+4   chromedriver                        0x000000010224da7c cxxbridge1$string$len + 3424
+5   chromedriver                        0x000000010224b640 chromedriver + 226880
+6   chromedriver                        0x000000010224c234 chromedriver + 229940
+7   chromedriver                        0x0000000102259c58 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 35060
+8   chromedriver                        0x0000000102270664 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 127744
+9   chromedriver                        0x000000010224c8a0 chromedriver + 231584
+10  chromedriver                        0x0000000102270460 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 127228
+11  chromedriver                        0x00000001022ebc54 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 633072
+12  chromedriver                        0x00000001022a1c10 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 329900
+13  chromedriver                        0x00000001027661b0 cxxbridge1$str$ptr + 2946368
+14  chromedriver                        0x000000010276990c cxxbridge1$str$ptr + 2960540
+15  chromedriver                        0x000000010274b100 cxxbridge1$str$ptr + 2835600
+16  chromedriver                        0x000000010276a18c cxxbridge1$str$ptr + 2962716
+17  chromedriver                        0x000000010273bbac cxxbridge1$str$ptr + 2772796
+18  chromedriver                        0x000000010278f258 cxxbridge1$str$ptr + 3114472
+19  chromedriver                        0x000000010278f3b8 cxxbridge1$str$ptr + 3114824
+20  chromedriver                        0x00000001027a00e0 cxxbridge1$str$ptr + 3183728
+21  libsystem_pthread.dylib             0x00000001855ac26c _pthread_start + 148
+22  libsystem_pthread.dylib             0x00000001855a708c thread_start + 8
+
+2026-05-11 22:15:14.155 | INFO     | conftest:driver:45 - === 关闭浏览器驱动 ===
+2026-05-11 22:15:14.316 | INFO     | conftest:driver:23 - === 开始初始化浏览器驱动 ===
+2026-05-11 22:16:31.688 | ERROR    | conftest:driver:40 - 浏览器初始化失败: Message: timeout: Timed out receiving message from renderer: 57.881
+  (Session info: chrome=148.0.7778.97)
+Stacktrace:
+0   chromedriver                        0x00000001050f45b0 cxxbridge1$str$ptr + 3217728
+1   chromedriver                        0x00000001050ec488 cxxbridge1$str$ptr + 3184664
+2   chromedriver                        0x0000000104baf9f0 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 75404
+3   chromedriver                        0x0000000104b99d94 cxxbridge1$string$len + 4216
+4   chromedriver                        0x0000000104b99a7c cxxbridge1$string$len + 3424
+5   chromedriver                        0x0000000104b97640 chromedriver + 226880
+6   chromedriver                        0x0000000104b98234 chromedriver + 229940
+7   chromedriver                        0x0000000104ba5c58 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 35060
+8   chromedriver                        0x0000000104bbc664 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 127744
+9   chromedriver                        0x0000000104b988a0 chromedriver + 231584
+10  chromedriver                        0x0000000104bbc460 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 127228
+11  chromedriver                        0x0000000104c37c54 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 633072
+12  chromedriver                        0x0000000104bedc10 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 329900
+13  chromedriver                        0x00000001050b21b0 cxxbridge1$str$ptr + 2946368
+14  chromedriver                        0x00000001050b590c cxxbridge1$str$ptr + 2960540
+15  chromedriver                        0x0000000105097100 cxxbridge1$str$ptr + 2835600
+16  chromedriver                        0x00000001050b618c cxxbridge1$str$ptr + 2962716
+17  chromedriver                        0x0000000105087bac cxxbridge1$str$ptr + 2772796
+18  chromedriver                        0x00000001050db258 cxxbridge1$str$ptr + 3114472
+19  chromedriver                        0x00000001050db3b8 cxxbridge1$str$ptr + 3114824
+20  chromedriver                        0x00000001050ec0e0 cxxbridge1$str$ptr + 3183728
+21  libsystem_pthread.dylib             0x00000001855ac26c _pthread_start + 148
+22  libsystem_pthread.dylib             0x00000001855a708c thread_start + 8
+
+2026-05-11 22:16:31.691 | INFO     | conftest:driver:45 - === 关闭浏览器驱动 ===
+2026-05-11 22:16:31.819 | INFO     | conftest:driver:23 - === 开始初始化浏览器驱动 ===

@@ -1,0 +1,54 @@
+2026-05-11 18:28:19.989 | INFO     | conftest:driver:51 - === 开始初始化浏览器驱动 ===
+2026-05-11 18:28:29.928 | INFO     | conftest:driver:62 - 成功访问基础URL: https://www.saucedemo.com
+2026-05-11 18:28:29.929 | INFO     | conftest:cart_page:83 - 1. 开始登录系统
+2026-05-11 18:28:30.256 | INFO     | conftest:cart_page:88 - 已使用用户 standard_user 登录成功
+2026-05-11 18:28:30.256 | INFO     | conftest:cart_page:90 - === 开始执行cart_page fixture ===
+2026-05-11 18:28:30.256 | INFO     | conftest:cart_page:94 - 1. 开始登录系统
+2026-05-11 18:28:50.304 | ERROR    | conftest:cart_page:132 - === cart_page fixture执行失败 ===
+2026-05-11 18:28:50.355 | INFO     | conftest:driver:72 - === 关闭浏览器驱动 ===
+2026-05-11 18:28:50.462 | INFO     | conftest:driver:51 - === 开始初始化浏览器驱动 ===
+2026-05-11 18:28:57.767 | INFO     | conftest:driver:62 - 成功访问基础URL: https://www.saucedemo.com
+2026-05-11 18:28:57.768 | INFO     | conftest:cart_page:83 - 1. 开始登录系统
+2026-05-11 18:28:58.020 | INFO     | conftest:cart_page:88 - 已使用用户 standard_user 登录成功
+2026-05-11 18:28:58.020 | INFO     | conftest:cart_page:90 - === 开始执行cart_page fixture ===
+2026-05-11 18:28:58.020 | INFO     | conftest:cart_page:94 - 1. 开始登录系统
+2026-05-11 18:29:18.033 | ERROR    | conftest:cart_page:132 - === cart_page fixture执行失败 ===
+2026-05-11 18:29:18.069 | INFO     | conftest:driver:72 - === 关闭浏览器驱动 ===
+2026-05-11 18:29:18.173 | INFO     | conftest:driver:51 - === 开始初始化浏览器驱动 ===
+2026-05-11 18:30:34.881 | ERROR    | conftest:driver:67 - 初始化浏览器失败: Message: timeout: Timed out receiving message from renderer: 16.596
+  (Session info: chrome=148.0.7778.97)
+Stacktrace:
+0   chromedriver                        0x0000000104f685b0 cxxbridge1$str$ptr + 3217728
+1   chromedriver                        0x0000000104f60488 cxxbridge1$str$ptr + 3184664
+2   chromedriver                        0x0000000104a239f0 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 75404
+3   chromedriver                        0x0000000104a0dd94 cxxbridge1$string$len + 4216
+4   chromedriver                        0x0000000104a0da7c cxxbridge1$string$len + 3424
+5   chromedriver                        0x0000000104a0b640 chromedriver + 226880
+6   chromedriver                        0x0000000104a0c234 chromedriver + 229940
+7   chromedriver                        0x0000000104a19c58 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 35060
+8   chromedriver                        0x0000000104a30664 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 127744
+9   chromedriver                        0x0000000104a0c8a0 chromedriver + 231584
+10  chromedriver                        0x0000000104a30460 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 127228
+11  chromedriver                        0x0000000104aabc54 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 633072
+12  chromedriver                        0x0000000104a61c10 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 329900
+13  chromedriver                        0x0000000104f261b0 cxxbridge1$str$ptr + 2946368
+14  chromedriver                        0x0000000104f2990c cxxbridge1$str$ptr + 2960540
+15  chromedriver                        0x0000000104f0b100 cxxbridge1$str$ptr + 2835600
+16  chromedriver                        0x0000000104f2a18c cxxbridge1$str$ptr + 2962716
+17  chromedriver                        0x0000000104efbbac cxxbridge1$str$ptr + 2772796
+18  chromedriver                        0x0000000104f4f258 cxxbridge1$str$ptr + 3114472
+19  chromedriver                        0x0000000104f4f3b8 cxxbridge1$str$ptr + 3114824
+20  chromedriver                        0x0000000104f600e0 cxxbridge1$str$ptr + 3183728
+21  libsystem_pthread.dylib             0x00000001855ac26c _pthread_start + 148
+22  libsystem_pthread.dylib             0x00000001855a708c thread_start + 8
+
+2026-05-11 18:30:34.882 | INFO     | conftest:driver:72 - === 关闭浏览器驱动 ===
+2026-05-11 18:30:35.013 | INFO     | conftest:driver:51 - === 开始初始化浏览器驱动 ===
+2026-05-11 18:31:55.104 | INFO     | conftest:driver:62 - 成功访问基础URL: https://www.saucedemo.com
+2026-05-11 18:31:55.111 | INFO     | conftest:cart_page:83 - 1. 开始登录系统
+2026-05-11 18:31:55.366 | INFO     | conftest:cart_page:88 - 已使用用户 standard_user 登录成功
+2026-05-11 18:31:55.374 | INFO     | conftest:cart_page:90 - === 开始执行cart_page fixture ===
+2026-05-11 18:31:55.374 | INFO     | conftest:cart_page:94 - 1. 开始登录系统
+2026-05-11 18:32:15.433 | ERROR    | conftest:cart_page:132 - === cart_page fixture执行失败 ===
+2026-05-11 18:32:15.454 | INFO     | conftest:driver:72 - === 关闭浏览器驱动 ===
+2026-05-11 18:32:15.556 | INFO     | conftest:driver:51 - === 开始初始化浏览器驱动 ===

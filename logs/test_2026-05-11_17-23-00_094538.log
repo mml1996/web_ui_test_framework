@@ -1,0 +1,58 @@
+2026-05-11 17:23:00.171 | INFO     | conftest:driver:51 - === 开始初始化浏览器驱动 ===
+2026-05-11 17:23:09.697 | INFO     | conftest:driver:62 - 成功访问基础URL: https://www.saucedemo.com
+2026-05-11 17:23:31.296 | INFO     | conftest:driver:72 - === 关闭浏览器驱动 ===
+2026-05-11 17:23:31.401 | INFO     | conftest:driver:51 - === 开始初始化浏览器驱动 ===
+2026-05-11 17:23:35.268 | INFO     | conftest:driver:62 - 成功访问基础URL: https://www.saucedemo.com
+2026-05-11 17:23:55.850 | INFO     | conftest:driver:72 - === 关闭浏览器驱动 ===
+2026-05-11 17:23:55.955 | INFO     | conftest:driver:51 - === 开始初始化浏览器驱动 ===
+2026-05-11 17:25:14.663 | ERROR    | conftest:driver:67 - 初始化浏览器失败: Could not reach host. Are you offline?
+2026-05-11 17:25:14.864 | INFO     | conftest:driver:51 - === 开始初始化浏览器驱动 ===
+2026-05-11 17:25:27.646 | INFO     | conftest:driver:62 - 成功访问基础URL: https://www.saucedemo.com
+2026-05-11 17:25:48.179 | INFO     | conftest:driver:72 - === 关闭浏览器驱动 ===
+2026-05-11 17:25:48.286 | INFO     | conftest:driver:51 - === 开始初始化浏览器驱动 ===
+2026-05-11 17:26:21.905 | ERROR    | conftest:driver:67 - 初始化浏览器失败: Message: timeout: Timed out receiving message from renderer: 26.863
+  (Session info: chrome=148.0.7778.97)
+Stacktrace:
+0   chromedriver                        0x000000010277c5b0 cxxbridge1$str$ptr + 3217728
+1   chromedriver                        0x0000000102774488 cxxbridge1$str$ptr + 3184664
+2   chromedriver                        0x00000001022379f0 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 75404
+3   chromedriver                        0x0000000102221d94 cxxbridge1$string$len + 4216
+4   chromedriver                        0x0000000102221a7c cxxbridge1$string$len + 3424
+5   chromedriver                        0x000000010221f640 chromedriver + 226880
+6   chromedriver                        0x0000000102220234 chromedriver + 229940
+7   chromedriver                        0x000000010222dc58 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 35060
+8   chromedriver                        0x0000000102244664 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 127744
+9   chromedriver                        0x00000001022208a0 chromedriver + 231584
+10  chromedriver                        0x0000000102244460 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 127228
+11  chromedriver                        0x00000001022bfc54 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 633072
+12  chromedriver                        0x0000000102275c10 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 329900
+13  chromedriver                        0x000000010273a1b0 cxxbridge1$str$ptr + 2946368
+14  chromedriver                        0x000000010273d90c cxxbridge1$str$ptr + 2960540
+15  chromedriver                        0x000000010271f100 cxxbridge1$str$ptr + 2835600
+16  chromedriver                        0x000000010273e18c cxxbridge1$str$ptr + 2962716
+17  chromedriver                        0x000000010270fbac cxxbridge1$str$ptr + 2772796
+18  chromedriver                        0x0000000102763258 cxxbridge1$str$ptr + 3114472
+19  chromedriver                        0x00000001027633b8 cxxbridge1$str$ptr + 3114824
+20  chromedriver                        0x00000001027740e0 cxxbridge1$str$ptr + 3183728
+21  libsystem_pthread.dylib             0x00000001855ac26c _pthread_start + 148
+22  libsystem_pthread.dylib             0x00000001855a708c thread_start + 8
+
+2026-05-11 17:26:21.911 | INFO     | conftest:driver:72 - === 关闭浏览器驱动 ===
+2026-05-11 17:26:22.062 | INFO     | conftest:driver:51 - === 开始初始化浏览器驱动 ===
+2026-05-11 17:26:28.052 | INFO     | conftest:driver:62 - 成功访问基础URL: https://www.saucedemo.com
+2026-05-11 17:26:48.665 | INFO     | conftest:driver:72 - === 关闭浏览器驱动 ===
+2026-05-11 17:26:48.773 | INFO     | conftest:driver:51 - === 开始初始化浏览器驱动 ===
+2026-05-11 17:27:01.987 | INFO     | conftest:driver:62 - 成功访问基础URL: https://www.saucedemo.com
+2026-05-11 17:27:24.295 | INFO     | conftest:driver:72 - === 关闭浏览器驱动 ===
+2026-05-11 17:27:24.401 | INFO     | conftest:driver:51 - === 开始初始化浏览器驱动 ===
+2026-05-11 17:27:41.326 | INFO     | conftest:driver:62 - 成功访问基础URL: https://www.saucedemo.com
+2026-05-11 17:28:02.781 | INFO     | conftest:driver:72 - === 关闭浏览器驱动 ===
+2026-05-11 17:28:02.897 | INFO     | conftest:driver:51 - === 开始初始化浏览器驱动 ===
+2026-05-11 17:28:14.416 | INFO     | conftest:driver:62 - 成功访问基础URL: https://www.saucedemo.com
+2026-05-11 17:28:36.842 | INFO     | conftest:driver:72 - === 关闭浏览器驱动 ===
+2026-05-11 17:28:36.942 | INFO     | conftest:driver:51 - === 开始初始化浏览器驱动 ===
+2026-05-11 17:28:43.363 | INFO     | conftest:driver:62 - 成功访问基础URL: https://www.saucedemo.com
+2026-05-11 17:29:04.263 | INFO     | conftest:driver:72 - === 关闭浏览器驱动 ===
+2026-05-11 17:29:04.364 | INFO     | conftest:driver:51 - === 开始初始化浏览器驱动 ===
+2026-05-11 17:29:09.276 | INFO     | conftest:driver:62 - 成功访问基础URL: https://www.saucedemo.com
+2026-05-11 17:29:30.087 | INFO     | conftest:driver:72 - === 关闭浏览器驱动 ===

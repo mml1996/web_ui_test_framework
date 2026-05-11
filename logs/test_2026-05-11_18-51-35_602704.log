@@ -1,0 +1,2 @@
+2026-05-11 18:51:35.689 | INFO     | conftest:driver:23 - === 开始初始化浏览器驱动 ===
+2026-05-11 18:51:35.689 | ERROR    | conftest:driver:57 - 浏览器初始化失败: DriverFactory.get_driver() got an unexpected keyword argument 'options'

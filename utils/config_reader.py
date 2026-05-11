@@ -15,15 +15,32 @@
 import yaml
 from pathlib import Path
 
+
 class Config:
     def __init__(self):
-        self.config_file = Path(__file__).parent.parent /'config'/ 'settings.yaml'
-        with open(self.config_file,'r') as f:
-            self.data = yaml.safe_load(f)
+        self.config_file = Path(__file__).parent.parent / 'config' / 'settings.yaml'
 
-    def get(self,key):
-        return self.data.get(key)
+        try:
+            with open(self.config_file, 'r', encoding='utf-8') as f:
+                self.data = yaml.safe_load(f)
+            if not self.data:
+                raise ValueError("配置文件为空")
+        except FileNotFoundError:
+            raise FileNotFoundError(f"配置文件不存在: {self.config_file}")
+        except Exception as e:
+            raise Exception(f"读取配置文件失败: {str(e)}")
 
+    def get(self, key, default=None):
+        """
+        获取配置值
+        :param key: 配置项名称
+        :param default: 配置项不存在时返回的默认值
+        :return: 配置值
+        """
+        return self.data.get(key, default)
+
+
+# 全局配置实例
 config = Config()
 
 

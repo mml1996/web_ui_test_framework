@@ -1,0 +1,15 @@
+2026-05-11 20:29:42.842 | INFO     | conftest:driver:23 - === 开始初始化浏览器驱动 ===
+2026-05-11 20:29:47.277 | INFO     | conftest:driver:35 - 成功访问基础URL: https://www.saucedemo.com
+2026-05-11 20:29:47.278 | INFO     | conftest:cart_page:52 - === 开始执行cart_page fixture ===
+2026-05-11 20:29:47.278 | INFO     | conftest:cart_page:55 - 1. 开始登录系统
+2026-05-11 20:29:47.567 | INFO     | conftest:cart_page:59 - 已使用用户 standard_user 登录成功
+2026-05-11 20:29:47.567 | INFO     | conftest:cart_page:62 - 2. 开始清空购物车
+2026-05-11 20:30:08.950 | INFO     | conftest:cart_page:70 - 已清空购物车
+2026-05-11 20:30:08.951 | INFO     | conftest:cart_page:73 - 3. 开始添加商品到购物车
+2026-05-11 20:30:09.440 | INFO     | conftest:cart_page:79 - 已添加商品 "Sauce Labs Backpack" 到购物车
+2026-05-11 20:30:09.475 | INFO     | conftest:cart_page:83 - 已添加商品 "Sauce Labs Bolt T-Shirt" 到购物车
+2026-05-11 20:30:09.475 | INFO     | conftest:cart_page:86 - 4. 开始进入购物车页面
+2026-05-11 20:30:09.517 | INFO     | conftest:cart_page:88 - 已进入购物车页面
+2026-05-11 20:30:09.517 | INFO     | conftest:cart_page:92 - === cart_page fixture执行成功 ===
+2026-05-11 20:30:30.247 | ERROR    | conftest:pytest_runtest_makereport:118 - 用例 test_empty_cart_shows_correct_message 失败，截图已保存: reports/screenshots/test_empty_cart_shows_correct_message_20260511203029.png
+2026-05-11 20:30:30.812 | INFO     | conftest:driver:45 - === 关闭浏览器驱动 ===
