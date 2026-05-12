@@ -1,0 +1,4 @@
+2026-05-12 18:53:05.978 | INFO     | conftest:driver:23 - === 开始初始化浏览器驱动 ===
+2026-05-12 18:56:23.743 | ERROR    | conftest:driver:40 - 浏览器初始化失败: Could not reach host. Are you offline?
+2026-05-12 18:56:23.900 | INFO     | conftest:driver:23 - === 开始初始化浏览器驱动 ===
+2026-05-12 18:56:38.214 | INFO     | conftest:driver:45 - === 关闭浏览器驱动 ===

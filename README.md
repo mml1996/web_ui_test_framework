@@ -32,12 +32,15 @@
 ## 📊 Allure 测试报告效果
 
 项目集成了 Allure 可视化测试报告，实现了用例的分层管理、参数化展示与完整执行记录：
+### 用例报告总览
+![Allure 用例总览](/images/测试用例总览.jpg)
 
 ### 用例分层与执行详情
-![Allure 用例详情](./2231778414742_.pic.jpg)
+![Allure 用例详情](/images/用例分级与执行.jpg)
 
 ### 参数化用例场景验证
-![Allure 参数化用例](./2241778414775_.pic.jpg)
+![Allure 参数化用例](/images/参数化用例.jpg)
+
 
 # 报告核心能力：
   按 Epic/Feature/Story/Title 四层结构展示用例
