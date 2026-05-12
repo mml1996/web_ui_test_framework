@@ -1,7 +1,7 @@
-pytest
 selenium
+pytest
 allure-pytest
-webdriver-manager
+allure-python-commons
 loguru
 pyyaml
 pytest-html
