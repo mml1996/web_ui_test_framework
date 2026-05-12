@@ -2,6 +2,8 @@ import logging
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
+from selenium.webdriver.support.wait import WebDriverWait
+
 from pages.base_page import BasePage
 
 
@@ -12,6 +14,10 @@ class CartPage(BasePage):
     #-----元素定位器（Page Locators）-----
     PAGE_TITLE = (By.CLASS_NAME, 'title')     # 页面标题
     CART_ITEMS = (By.CLASS_NAME, 'cart_item')  # 所有商品项目的列表
+
+    def __int__(self,driver):
+        super().__init__(driver)
+        seif.wait = WebDriverWait(driver, 10)
 
     # 单个商品项目内部元素的定位方式，基于商品项来查找
     ITEM_NAME = (By.CLASS_NAME, 'inventory_item_name')  # 商品名称
@@ -32,8 +38,8 @@ class CartPage(BasePage):
         """
         try:
             # 等待页面标题元素出现，并检查其文本是否为 "Your Cart"
-            title_element = self.wait.until(EC.visibility_of_element_located(self.PAGE_TITLE))
-            return title_element.text == "Your Cart"
+            #title_element = self.wait.until(EC.visibility_of_element_located(self.PAGE_TITLE))
+            return "cart.html" in self.driver.current_url
         except TimeoutException:  # 修正：捕获具体的 超时异常
             return False
 
@@ -130,7 +136,10 @@ class CartPage(BasePage):
         内部方法：获取购物车中所有商品的完整信息
         """
         items_info = []
-        cart_items = self.wait.until(EC.presence_of_all_elements_located(self.CART_ITEMS))
+        try:
+            cart_items = self.wait.until(EC.presence_of_all_elements_located(self.CART_ITEMS))
+        except:
+            return []
 
         for item in cart_items:
             #  在每个商品项的上下文中查找子元素，并获取其文本
