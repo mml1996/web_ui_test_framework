@@ -43,7 +43,7 @@ class CartPage(BasePage):
         """
         # 等待至少一个商品项存在，或直接找所有商品项，如果找不到则返回空列表
         try:
-            items = self.wait.until(EC.presence_of_all_elements_located(self.CART_ITEMS))
+            items = self.wait.until(EC.visibility_of_all_elements_located(self.CART_ITEMS))
             return len(items)
         except TimeoutException:
             # 购物车为空时，直接返回0
@@ -146,7 +146,7 @@ class CartPage(BasePage):
             remove_btn_displayed = False
             try:
                 remove_btn = item.find_element(*self.ITEM_REMOVE_BTN)
-                remove_btn_displayed = int(quantity_select.get_attribute('value'))
+                remove_btn_displayed = remove_btn.is_displayed()
             except:
                 pass
 
@@ -155,7 +155,7 @@ class CartPage(BasePage):
                 'desc': desc,
                 'price': price,
                 'quantity': current_quantity,
-                'remove_btn': remove_btn.is_displayed()
+                'remove_btn': remove_btn_displayed
             })
         return items_info
 

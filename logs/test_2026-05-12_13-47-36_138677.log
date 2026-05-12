@@ -1,0 +1,86 @@
+2026-05-12 13:47:36.186 | INFO     | conftest:driver:23 - === 开始初始化浏览器驱动 ===
+2026-05-12 13:47:40.679 | INFO     | conftest:driver:35 - 成功访问基础URL: https://www.saucedemo.com
+2026-05-12 13:47:40.680 | INFO     | conftest:cart_page:52 - === 开始执行cart_page fixture ===
+2026-05-12 13:47:40.680 | INFO     | conftest:cart_page:55 - 1. 开始登录系统
+2026-05-12 13:47:40.862 | INFO     | conftest:cart_page:59 - 已使用用户 standard_user 登录成功
+2026-05-12 13:47:40.862 | INFO     | conftest:cart_page:62 - 2. 开始清空购物车
+2026-05-12 13:48:01.730 | INFO     | conftest:cart_page:70 - 已清空购物车
+2026-05-12 13:48:01.732 | INFO     | conftest:cart_page:73 - 3. 开始添加商品到购物车
+2026-05-12 13:48:02.086 | INFO     | conftest:cart_page:79 - 已添加商品 "Sauce Labs Backpack" 到购物车
+2026-05-12 13:48:02.108 | INFO     | conftest:cart_page:83 - 已添加商品 "Sauce Labs Bolt T-Shirt" 到购物车
+2026-05-12 13:48:02.108 | INFO     | conftest:cart_page:86 - 4. 开始进入购物车页面
+2026-05-12 13:48:02.133 | INFO     | conftest:cart_page:88 - 已进入购物车页面
+2026-05-12 13:48:02.133 | INFO     | conftest:cart_page:92 - === cart_page fixture执行成功 ===
+2026-05-12 13:48:02.147 | INFO     | conftest:driver:45 - === 关闭浏览器驱动 ===
+2026-05-12 13:48:02.230 | INFO     | conftest:driver:23 - === 开始初始化浏览器驱动 ===
+2026-05-12 13:48:09.813 | INFO     | conftest:driver:35 - 成功访问基础URL: https://www.saucedemo.com
+2026-05-12 13:48:09.813 | INFO     | conftest:cart_page:52 - === 开始执行cart_page fixture ===
+2026-05-12 13:48:09.813 | INFO     | conftest:cart_page:55 - 1. 开始登录系统
+2026-05-12 13:48:09.996 | INFO     | conftest:cart_page:59 - 已使用用户 standard_user 登录成功
+2026-05-12 13:48:09.996 | INFO     | conftest:cart_page:62 - 2. 开始清空购物车
+2026-05-12 13:48:30.731 | INFO     | conftest:cart_page:70 - 已清空购物车
+2026-05-12 13:48:30.732 | INFO     | conftest:cart_page:73 - 3. 开始添加商品到购物车
+2026-05-12 13:48:30.976 | INFO     | conftest:cart_page:79 - 已添加商品 "Sauce Labs Backpack" 到购物车
+2026-05-12 13:48:30.999 | INFO     | conftest:cart_page:83 - 已添加商品 "Sauce Labs Bolt T-Shirt" 到购物车
+2026-05-12 13:48:30.999 | INFO     | conftest:cart_page:86 - 4. 开始进入购物车页面
+2026-05-12 13:48:31.023 | INFO     | conftest:cart_page:88 - 已进入购物车页面
+2026-05-12 13:48:31.024 | INFO     | conftest:cart_page:92 - === cart_page fixture执行成功 ===
+2026-05-12 13:48:51.129 | INFO     | conftest:driver:45 - === 关闭浏览器驱动 ===
+2026-05-12 13:48:51.232 | INFO     | conftest:driver:23 - === 开始初始化浏览器驱动 ===
+2026-05-12 13:48:56.316 | INFO     | conftest:driver:35 - 成功访问基础URL: https://www.saucedemo.com
+2026-05-12 13:48:56.316 | INFO     | conftest:cart_page:52 - === 开始执行cart_page fixture ===
+2026-05-12 13:48:56.316 | INFO     | conftest:cart_page:55 - 1. 开始登录系统
+2026-05-12 13:48:56.492 | INFO     | conftest:cart_page:59 - 已使用用户 standard_user 登录成功
+2026-05-12 13:48:56.493 | INFO     | conftest:cart_page:62 - 2. 开始清空购物车
+2026-05-12 13:49:17.018 | INFO     | conftest:cart_page:70 - 已清空购物车
+2026-05-12 13:49:17.020 | INFO     | conftest:cart_page:73 - 3. 开始添加商品到购物车
+2026-05-12 13:49:17.305 | INFO     | conftest:cart_page:79 - 已添加商品 "Sauce Labs Backpack" 到购物车
+2026-05-12 13:49:17.327 | INFO     | conftest:cart_page:83 - 已添加商品 "Sauce Labs Bolt T-Shirt" 到购物车
+2026-05-12 13:49:17.328 | INFO     | conftest:cart_page:86 - 4. 开始进入购物车页面
+2026-05-12 13:49:17.353 | INFO     | conftest:cart_page:88 - 已进入购物车页面
+2026-05-12 13:49:17.356 | INFO     | conftest:cart_page:92 - === cart_page fixture执行成功 ===
+2026-05-12 13:49:46.421 | INFO     | conftest:driver:45 - === 关闭浏览器驱动 ===
+2026-05-12 13:49:46.441 | INFO     | conftest:driver:23 - === 开始初始化浏览器驱动 ===
+2026-05-12 13:49:50.871 | INFO     | conftest:driver:35 - 成功访问基础URL: https://www.saucedemo.com
+2026-05-12 13:49:50.872 | INFO     | conftest:cart_page:52 - === 开始执行cart_page fixture ===
+2026-05-12 13:49:50.872 | INFO     | conftest:cart_page:55 - 1. 开始登录系统
+2026-05-12 13:49:51.042 | INFO     | conftest:cart_page:59 - 已使用用户 standard_user 登录成功
+2026-05-12 13:49:51.042 | INFO     | conftest:cart_page:62 - 2. 开始清空购物车
+2026-05-12 13:55:19.446 | INFO     | conftest:cart_page:70 - 已清空购物车
+2026-05-12 13:55:19.447 | INFO     | conftest:cart_page:73 - 3. 开始添加商品到购物车
+2026-05-12 13:55:37.120 | INFO     | conftest:cart_page:79 - 已添加商品 "Sauce Labs Backpack" 到购物车
+2026-05-12 13:55:37.143 | INFO     | conftest:cart_page:83 - 已添加商品 "Sauce Labs Bolt T-Shirt" 到购物车
+2026-05-12 13:55:37.143 | INFO     | conftest:cart_page:86 - 4. 开始进入购物车页面
+2026-05-12 13:55:37.172 | INFO     | conftest:cart_page:88 - 已进入购物车页面
+2026-05-12 13:55:37.172 | INFO     | conftest:cart_page:92 - === cart_page fixture执行成功 ===
+2026-05-12 13:55:37.175 | INFO     | conftest:driver:45 - === 关闭浏览器驱动 ===
+2026-05-12 13:55:37.264 | INFO     | conftest:driver:23 - === 开始初始化浏览器驱动 ===
+2026-05-12 13:56:46.934 | ERROR    | conftest:driver:40 - 浏览器初始化失败: Message: timeout: Timed out receiving message from renderer: 52.659
+  (Session info: chrome=148.0.7778.97)
+Stacktrace:
+0   chromedriver                        0x00000001032fc5b0 cxxbridge1$str$ptr + 3217728
+1   chromedriver                        0x00000001032f4488 cxxbridge1$str$ptr + 3184664
+2   chromedriver                        0x0000000102db79f0 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 75404
+3   chromedriver                        0x0000000102da1d94 cxxbridge1$string$len + 4216
+4   chromedriver                        0x0000000102da1a7c cxxbridge1$string$len + 3424
+5   chromedriver                        0x0000000102d9f640 chromedriver + 226880
+6   chromedriver                        0x0000000102da0234 chromedriver + 229940
+7   chromedriver                        0x0000000102dadc58 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 35060
+8   chromedriver                        0x0000000102dc4664 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 127744
+9   chromedriver                        0x0000000102da08a0 chromedriver + 231584
+10  chromedriver                        0x0000000102dc4460 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 127228
+11  chromedriver                        0x0000000102e3fc54 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 633072
+12  chromedriver                        0x0000000102df5c10 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 329900
+13  chromedriver                        0x00000001032ba1b0 cxxbridge1$str$ptr + 2946368
+14  chromedriver                        0x00000001032bd90c cxxbridge1$str$ptr + 2960540
+15  chromedriver                        0x000000010329f100 cxxbridge1$str$ptr + 2835600
+16  chromedriver                        0x00000001032be18c cxxbridge1$str$ptr + 2962716
+17  chromedriver                        0x000000010328fbac cxxbridge1$str$ptr + 2772796
+18  chromedriver                        0x00000001032e3258 cxxbridge1$str$ptr + 3114472
+19  chromedriver                        0x00000001032e33b8 cxxbridge1$str$ptr + 3114824
+20  chromedriver                        0x00000001032f40e0 cxxbridge1$str$ptr + 3183728
+21  libsystem_pthread.dylib             0x00000001855ac26c _pthread_start + 148
+22  libsystem_pthread.dylib             0x00000001855a708c thread_start + 8
+
+2026-05-12 13:56:46.936 | INFO     | conftest:driver:45 - === 关闭浏览器驱动 ===
+2026-05-12 13:56:47.085 | INFO     | conftest:driver:23 - === 开始初始化浏览器驱动 ===
