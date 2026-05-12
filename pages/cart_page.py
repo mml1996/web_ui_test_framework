@@ -15,10 +15,6 @@ class CartPage(BasePage):
     PAGE_TITLE = (By.CLASS_NAME, 'title')     # 页面标题
     CART_ITEMS = (By.CLASS_NAME, 'cart_item')  # 所有商品项目的列表
 
-    def __int__(self,driver):
-        super().__init__(driver)
-        seif.wait = WebDriverWait(driver, 10)
-
     # 单个商品项目内部元素的定位方式，基于商品项来查找
     ITEM_NAME = (By.CLASS_NAME, 'inventory_item_name')  # 商品名称
     ITEM_DESC = (By.CLASS_NAME, 'inventory_item_desc')  # 商品描述
@@ -30,6 +26,11 @@ class CartPage(BasePage):
     CHECKOUT_BTN = (By.ID, 'checkout')  # 修正：ID大小写错误
     CONTINUE_SHOPPING_BTN = (By.ID, 'continue-shopping') # 修正：删除重复定义和拼写错误
 
+    def __init__(self,driver):
+        super().__init__(driver)
+        self.wait = WebDriverWait(driver, 30)
+
+
     #------页面方法------
     def is_cart_page(self) -> bool:
         """
@@ -37,9 +38,10 @@ class CartPage(BasePage):
         捕获页面加载超时、元素不存在等异常
         """
         try:
-            # 等待页面标题元素出现，并检查其文本是否为 "Your Cart"
-            #title_element = self.wait.until(EC.visibility_of_element_located(self.PAGE_TITLE))
-            return "cart.html" in self.driver.current_url
+            self.wait.until(EC.url_contains("cart.html"))
+
+            title_element = self.wait.until(EC.visibility_of_element_located(self.PAGE_TITLE))
+            return title_element.text == "Your Cart"
         except TimeoutException:  # 修正：捕获具体的 超时异常
             return False
 
@@ -50,15 +52,12 @@ class CartPage(BasePage):
         # 等待至少一个商品项存在，或直接找所有商品项，如果找不到则返回空列表
         try:
             items = self.wait.until(EC.presence_of_all_elements_located(self.CART_ITEMS))
+
             return len(items)
         except TimeoutException:
-            import time
-            time.sleep(2)
-            try:
-                items = self.driver.find_elements(*self.CART_ITEMS)
-                return len(items)
-            except:
-                return 0
+            return 0
+
+
 
     def get_cart_item_name(self) -> list:
         """
@@ -136,7 +135,9 @@ class CartPage(BasePage):
         内部方法：获取购物车中所有商品的完整信息
         """
         items_info = []
+
         try:
+            self.wait.until(EC.url_contains("cart.html"))
             cart_items = self.wait.until(EC.presence_of_all_elements_located(self.CART_ITEMS))
         except:
             return []
