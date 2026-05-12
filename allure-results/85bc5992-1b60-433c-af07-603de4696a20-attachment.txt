@@ -1,3 +1,0 @@
-2026-05-12 14:15:42.766 | INFO     | conftest:driver:23 - === 开始初始化浏览器驱动 ===
-2026-05-12 14:15:48.086 | INFO     | conftest:driver:35 - 成功访问基础URL: https://www.saucedemo.com
-2026-05-12 14:15:48.267 | INFO     | conftest:driver:45 - === 关闭浏览器驱动 ===

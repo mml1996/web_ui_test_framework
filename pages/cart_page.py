@@ -46,8 +46,13 @@ class CartPage(BasePage):
             items = self.wait.until(EC.presence_of_all_elements_located(self.CART_ITEMS))
             return len(items)
         except TimeoutException:
-            # 购物车为空时，直接返回0
-            return 0
+            import time
+            time.sleep(2)
+            try:
+                items = self.driver.find_elements(*self.CART_ITEMS)
+                return len(items)
+            except:
+                return 0
 
     def get_cart_item_name(self) -> list:
         """
@@ -125,7 +130,7 @@ class CartPage(BasePage):
         内部方法：获取购物车中所有商品的完整信息
         """
         items_info = []
-        cart_items = self.find_elements(self.CART_ITEMS)
+        cart_items = self.wait.until(EC.presence_of_all_elements_located(self.CART_ITEMS))
 
         for item in cart_items:
             #  在每个商品项的上下文中查找子元素，并获取其文本
