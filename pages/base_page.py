@@ -17,7 +17,7 @@
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
-from utils.config_reader import config
+#from utils.config_reader import config
 import logging
 
 logger = logging.getLogger(__name__)
@@ -25,11 +25,13 @@ logger = logging.getLogger(__name__)
 class BasePage:
     def __init__(self, driver):
         self.driver = driver
-        self.timeout = config.get('timeout')
+        # 强制改成 30 秒，彻底解决 GitHub 超时
+        self.timeout = 30
         self.wait = WebDriverWait(self.driver, self.timeout)
 
     def find_element(self, locator):
         try:
+            # 优先等待元素可点击，最稳定
             element = self.wait.until(EC.element_to_be_clickable(locator))
             logger.info(f"找到元素: {locator}")
             return element
@@ -50,7 +52,6 @@ class BasePage:
         self.find_element(locator).click()
         logger.info(f'点击了元素: {locator}')
 
-    # 👇 这一行是你报错的根源！必须加 send_keys
     def send_keys(self, locator, text):
         element = self.find_element(locator)
         element.clear()
