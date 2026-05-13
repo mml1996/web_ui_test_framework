@@ -1,0 +1,63 @@
+2026-05-12 23:28:39.883 | INFO     | conftest:driver:23 - === 开始初始化浏览器驱动 ===
+2026-05-12 23:29:49.812 | ERROR    | conftest:driver:40 - 浏览器初始化失败: Message: timeout: Timed out receiving message from renderer: 58.676
+  (Session info: chrome=148.0.7778.97)
+Stacktrace:
+0   chromedriver                        0x0000000100f905b0 cxxbridge1$str$ptr + 3217728
+1   chromedriver                        0x0000000100f88488 cxxbridge1$str$ptr + 3184664
+2   chromedriver                        0x0000000100a4b9f0 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 75404
+3   chromedriver                        0x0000000100a35d94 cxxbridge1$string$len + 4216
+4   chromedriver                        0x0000000100a35a7c cxxbridge1$string$len + 3424
+5   chromedriver                        0x0000000100a33640 chromedriver + 226880
+6   chromedriver                        0x0000000100a34234 chromedriver + 229940
+7   chromedriver                        0x0000000100a41c58 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 35060
+8   chromedriver                        0x0000000100a58664 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 127744
+9   chromedriver                        0x0000000100a348a0 chromedriver + 231584
+10  chromedriver                        0x0000000100a58460 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 127228
+11  chromedriver                        0x0000000100ad3c54 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 633072
+12  chromedriver                        0x0000000100a89c10 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 329900
+13  chromedriver                        0x0000000100f4e1b0 cxxbridge1$str$ptr + 2946368
+14  chromedriver                        0x0000000100f5190c cxxbridge1$str$ptr + 2960540
+15  chromedriver                        0x0000000100f33100 cxxbridge1$str$ptr + 2835600
+16  chromedriver                        0x0000000100f5218c cxxbridge1$str$ptr + 2962716
+17  chromedriver                        0x0000000100f23bac cxxbridge1$str$ptr + 2772796
+18  chromedriver                        0x0000000100f77258 cxxbridge1$str$ptr + 3114472
+19  chromedriver                        0x0000000100f773b8 cxxbridge1$str$ptr + 3114824
+20  chromedriver                        0x0000000100f880e0 cxxbridge1$str$ptr + 3183728
+21  libsystem_pthread.dylib             0x00000001803c426c _pthread_start + 148
+22  libsystem_pthread.dylib             0x00000001803bf08c thread_start + 8
+
+2026-05-12 23:29:49.831 | INFO     | conftest:driver:45 - === 关闭浏览器驱动 ===
+2026-05-12 23:29:50.004 | INFO     | conftest:driver:23 - === 开始初始化浏览器驱动 ===
+2026-05-12 23:31:17.073 | ERROR    | conftest:driver:40 - 浏览器初始化失败: Message: timeout: Timed out receiving message from renderer: 57.288
+  (Session info: chrome=148.0.7778.97)
+Stacktrace:
+0   chromedriver                        0x0000000104a785b0 cxxbridge1$str$ptr + 3217728
+1   chromedriver                        0x0000000104a70488 cxxbridge1$str$ptr + 3184664
+2   chromedriver                        0x00000001045339f0 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 75404
+3   chromedriver                        0x000000010451dd94 cxxbridge1$string$len + 4216
+4   chromedriver                        0x000000010451da7c cxxbridge1$string$len + 3424
+5   chromedriver                        0x000000010451b640 chromedriver + 226880
+6   chromedriver                        0x000000010451c234 chromedriver + 229940
+7   chromedriver                        0x0000000104529c58 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 35060
+8   chromedriver                        0x0000000104540664 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 127744
+9   chromedriver                        0x000000010451c8a0 chromedriver + 231584
+10  chromedriver                        0x0000000104540460 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 127228
+11  chromedriver                        0x00000001045bbc54 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 633072
+12  chromedriver                        0x0000000104571c10 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 329900
+13  chromedriver                        0x0000000104a361b0 cxxbridge1$str$ptr + 2946368
+14  chromedriver                        0x0000000104a3990c cxxbridge1$str$ptr + 2960540
+15  chromedriver                        0x0000000104a1b100 cxxbridge1$str$ptr + 2835600
+16  chromedriver                        0x0000000104a3a18c cxxbridge1$str$ptr + 2962716
+17  chromedriver                        0x0000000104a0bbac cxxbridge1$str$ptr + 2772796
+18  chromedriver                        0x0000000104a5f258 cxxbridge1$str$ptr + 3114472
+19  chromedriver                        0x0000000104a5f3b8 cxxbridge1$str$ptr + 3114824
+20  chromedriver                        0x0000000104a700e0 cxxbridge1$str$ptr + 3183728
+21  libsystem_pthread.dylib             0x00000001803c426c _pthread_start + 148
+22  libsystem_pthread.dylib             0x00000001803bf08c thread_start + 8
+
+2026-05-12 23:31:17.093 | INFO     | conftest:driver:45 - === 关闭浏览器驱动 ===
+2026-05-12 23:31:17.250 | INFO     | conftest:driver:23 - === 开始初始化浏览器驱动 ===
+2026-05-12 23:31:43.124 | ERROR    | conftest:driver:40 - 浏览器初始化失败: Could not reach host. Are you offline?
+2026-05-12 23:31:43.344 | INFO     | conftest:driver:23 - === 开始初始化浏览器驱动 ===
+2026-05-12 23:32:06.166 | ERROR    | conftest:driver:40 - 浏览器初始化失败: Could not reach host. Are you offline?
+2026-05-12 23:32:06.394 | INFO     | conftest:driver:23 - === 开始初始化浏览器驱动 ===

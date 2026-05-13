@@ -9,3 +9,5 @@ webdriver-manager
 pyyaml
 pytest-html
 webdriver-manager
+pytest-xdist
+pytest-timeout

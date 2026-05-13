@@ -6,6 +6,10 @@ from datetime import datetime
 import allure
 from loguru import logger
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.wait import WebDriverWait
+
 from utils.driver_factory import DriverFactory
 from utils.config_reader import config
 
@@ -29,6 +33,7 @@ def driver():
         driver.set_page_load_timeout(60)
         driver.set_script_timeout(60)
         driver.implicitly_wait(config.get('timeout', 20))
+        driver.wait = WebDriverWait(driver, 20)
 
         base_url = config.get('base_url')
         driver.get(base_url)
@@ -74,12 +79,10 @@ def cart_page(driver):
         driver.get("https://www.saucedemo.com/inventory.html")
 
         # 直接用硬编码定位按钮，跳过你的 add_to_cart_by_name 方法
-        backpack_btn = driver.find_element(By.XPATH, "//button[@data-test='add-to-cart-sauce-labs-backpack']")
-        backpack_btn.click()
+        wait_clickable(driver, (By.XPATH, "//button[@data-test='add-to-cart-sauce-labs-backpack']")).click()
         logger.info('已添加商品 "Sauce Labs Backpack" 到购物车')
 
-        tshirt_btn = driver.find_element(By.XPATH, "//button[@data-test='add-to-cart-sauce-labs-bolt-t-shirt']")
-        tshirt_btn.click()
+        wait_clickable(driver, (By.XPATH, "//button[@data-test='add-to-cart-sauce-labs-bolt-t-shirt']")).click()
         logger.info('已添加商品 "Sauce Labs Bolt T-Shirt" 到购物车')
 
         # 4. 进入购物车
@@ -124,3 +127,12 @@ def pytest_runtest_makereport(item, call):
                 )
             except Exception as e:
                 logger.error(f'截图保存失败: {str(e)}', exc_info=True)
+
+
+# ==================== 通用等待工具（不影响业务）====================
+def wait_element(driver, locator):
+    return driver.wait.until(EC.presence_of_element_located(locator))
+
+def wait_clickable(driver, locator):
+    return driver.wait.until(EC.element_to_be_clickable(locator))
+

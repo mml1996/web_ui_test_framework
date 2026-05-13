@@ -1,0 +1,30 @@
+2026-05-12 23:23:46.230 | INFO     | conftest:driver:23 - === 开始初始化浏览器驱动 ===
+2026-05-12 23:25:00.842 | ERROR    | conftest:driver:40 - 浏览器初始化失败: Message: timeout: Timed out receiving message from renderer: 54.334
+  (Session info: chrome=148.0.7778.97)
+Stacktrace:
+0   chromedriver                        0x0000000104d6c5b0 cxxbridge1$str$ptr + 3217728
+1   chromedriver                        0x0000000104d64488 cxxbridge1$str$ptr + 3184664
+2   chromedriver                        0x00000001048279f0 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 75404
+3   chromedriver                        0x0000000104811d94 cxxbridge1$string$len + 4216
+4   chromedriver                        0x0000000104811a7c cxxbridge1$string$len + 3424
+5   chromedriver                        0x000000010480f640 chromedriver + 226880
+6   chromedriver                        0x0000000104810234 chromedriver + 229940
+7   chromedriver                        0x000000010481dc58 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 35060
+8   chromedriver                        0x0000000104834664 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 127744
+9   chromedriver                        0x00000001048108a0 chromedriver + 231584
+10  chromedriver                        0x0000000104834460 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 127228
+11  chromedriver                        0x00000001048afc54 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 633072
+12  chromedriver                        0x0000000104865c10 _RNvCsiKAbIcglKMQ_7___rustc35___rust_no_alloc_shim_is_unstable_v2 + 329900
+13  chromedriver                        0x0000000104d2a1b0 cxxbridge1$str$ptr + 2946368
+14  chromedriver                        0x0000000104d2d90c cxxbridge1$str$ptr + 2960540
+15  chromedriver                        0x0000000104d0f100 cxxbridge1$str$ptr + 2835600
+16  chromedriver                        0x0000000104d2e18c cxxbridge1$str$ptr + 2962716
+17  chromedriver                        0x0000000104cffbac cxxbridge1$str$ptr + 2772796
+18  chromedriver                        0x0000000104d53258 cxxbridge1$str$ptr + 3114472
+19  chromedriver                        0x0000000104d533b8 cxxbridge1$str$ptr + 3114824
+20  chromedriver                        0x0000000104d640e0 cxxbridge1$str$ptr + 3183728
+21  libsystem_pthread.dylib             0x00000001803c426c _pthread_start + 148
+22  libsystem_pthread.dylib             0x00000001803bf08c thread_start + 8
+
+2026-05-12 23:25:00.846 | INFO     | conftest:driver:45 - === 关闭浏览器驱动 ===
+2026-05-12 23:25:01.029 | INFO     | conftest:driver:23 - === 开始初始化浏览器驱动 ===
