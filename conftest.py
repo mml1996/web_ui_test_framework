@@ -1,3 +1,4 @@
+import time
 import sys
 import os
 import pytest
@@ -62,6 +63,7 @@ def cart_page(driver):
         login_page = LoginPage(driver)
         login_page.login("standard_user", "secret_sauce")
         logger.info('已使用用户 standard_user 登录成功')
+        time.sleep(1)
 
         # 2. 清空购物车
         logger.info('2. 开始清空购物车')
@@ -73,22 +75,27 @@ def cart_page(driver):
         except Exception as e:
             logger.warning(f'清空购物车时出现警告: {str(e)}')
         logger.info('已清空购物车')
+        time.sleep(0.5)
 
         # 3. 直接用硬编码的 XPath 添加商品，绕过 inventory_page.py
         logger.info('3. 开始添加商品到购物车')
         driver.get("https://www.saucedemo.com/inventory.html")
+        time.sleep(0.8)
 
         # 直接用硬编码定位按钮，跳过你的 add_to_cart_by_name 方法
         wait_clickable(driver, (By.XPATH, "//button[@data-test='add-to-cart-sauce-labs-backpack']")).click()
         logger.info('已添加商品 "Sauce Labs Backpack" 到购物车')
+        time.sleep(0.6)
 
         wait_clickable(driver, (By.XPATH, "//button[@data-test='add-to-cart-sauce-labs-bolt-t-shirt']")).click()
         logger.info('已添加商品 "Sauce Labs Bolt T-Shirt" 到购物车')
+        time.sleep(0.8)
 
         # 4. 进入购物车
         logger.info('4. 开始进入购物车页面')
         wait_clickable(driver, (By.CLASS_NAME, "shopping_cart_link")).click()
         logger.info('已进入购物车页面')
+        time.sleep(1)
 
         from pages.cart_page import CartPage
         cart_page_obj = CartPage(driver)
