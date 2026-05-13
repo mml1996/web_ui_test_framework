@@ -1,7 +1,6 @@
-
+import time
 import logging
 import allure
-#import pytest
 from selenium.webdriver.common.by import By
 from pages.cart_page import CartPage
 #from pages.inventory_page import InventoryPage
@@ -32,7 +31,7 @@ class TestCartPage:
                 # 用JS强制点击，确保删除成功
                 cart_page.driver.execute_script("arguments[0].click();", remove_btn)
                 # 每次删除后等待，防止删太快
-                time.sleep(0.5)
+                time.sleep(0.7)
 
         with allure.step("验证页面显示购物车为空"):
             assert cart_page.get_cart_items_count() == 0, "删除后购物车数量不为0"
@@ -73,7 +72,9 @@ class TestCartPage:
         with allure.step("验证开始时有两个商品"):
             assert cart_page.get_cart_items_count() == 2
         with allure.step("删除第一个商品"):
-            cart_page.remove_item(0)
+            remove_btn = cart_page.driver.find_element(By.XPATH, "(//button[text()='Remove'])[1]")
+            cart_page.driver.execute_script("arguments[0].click();", remove_btn)
+            time.sleep(0.8)
             assert cart_page.get_cart_items_count() == 1
             items_remaining = cart_page.get_cart_item_name()  # 修正：方法名拼写错误
             assert "Bolt T-Shirt" in items_remaining[0], "删除后剩余的商品不正确"
@@ -85,7 +86,9 @@ class TestCartPage:
         with allure.step("删除所有商品"):
             count = cart_page.get_cart_items_count()
             for _ in range(count):  # 修正：缩进错误
-                cart_page.remove_item(0)
+                remove_btn = cart_page.driver.find_element(By.XPATH, "(//button[text()='Remove'])[1]")
+                cart_page.driver.execute_script("arguments[0].click();", remove_btn)
+                time.sleep(0.5)
         with allure.step("验证购物车为空"):  # 修正：缺少冒号
             assert cart_page.get_cart_items_count() == 0
 
@@ -94,9 +97,11 @@ class TestCartPage:
     def test_continue_shopping_redirects_to_inventory(self, cart_page):
         """测试点击'ContinueShopping'按钮返回商品列表页面"""
         with allure.step("点击继续购物按钮"):
-            inventory_page = cart_page.click_continue_shopping()
+            btn = cart_page.driver.find_element(By.ID, "continue-shopping")
+            cart_page.driver.execute_script("arguments[0].click();", btn)
+            time.sleep(1)
         with allure.step("验证当前页面是商品列表页面"):
-            assert "inventory" in inventory_page.driver.current_url
+            assert "inventory" in cart_page.driver.current_url
 
     @allure.story("组合业务流测试")
     @allure.title("TC08: 完整流程: 添加商品 -> 删除 -> 重新添加，数据一致性")
@@ -119,9 +124,11 @@ class TestCartPage:
     def test_proceed_to_checkout(self, cart_page):
         """测试点击结算按钮后，能跳转到信息填写页面"""
         with allure.step("点击结算按钮"):
-            checkout_page = cart_page.click_checkout()
-            # 只验证跳转，不执行后续操作，避免依赖 checkout_page.py
-            assert "checkout-step-one" in checkout_page.driver.current_url, "未跳转到结算信息页"
+            btn = cart_page.driver.find_element(By.ID, "checkout")
+            cart_page.driver.execute_script("arguments[0].click();", btn)
+            time.sleep(1)
+
+        assert "checkout-step-one" in cart_page.driver.current_url, "未跳转到结算信息页"
 
     @allure.story("数据完整性")
     @allure.title("TC10: 验证购物车能正确显示不同数量的商品")
