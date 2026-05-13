@@ -77,28 +77,45 @@ def cart_page(driver):
         logger.info('已清空购物车')
         time.sleep(0.5)
 
-        # 3. 直接用硬编码的 XPath 添加商品，绕过 inventory_page.py
-        logger.info('3. 开始添加商品到购物车')
+        logger.info('3. 开始进入商品列表页')
         driver.get("https://www.saucedemo.com/inventory.html")
-        time.sleep(0.8)
+        time.sleep(1)
 
-        # 直接用硬编码定位按钮，跳过你的 add_to_cart_by_name 方法
-        wait_clickable(driver, (By.XPATH, "//button[@data-test='add-to-cart-sauce-labs-backpack']")).click()
-        logger.info('已添加商品 "Sauce Labs Backpack" 到购物车')
-        time.sleep(0.6)
+        # --------------------------
+        # 关键修复：加购逻辑改为「点击+验证」，确保GitHub一定生效
+        # --------------------------
+        # 加购1：Backpack
+        logger.info('添加商品：Sauce Labs Backpack')
+        backpack_btn = wait_clickable(driver, (By.XPATH, "//button[@data-test='add-to-cart-sauce-labs-backpack']"))
+        # 用JavaScript强制点击，绕过无界面模式的拦截
+        driver.execute_script("arguments[0].click();", backpack_btn)
+        time.sleep(1)
+        # 验证是否成功加入：按钮文字变成"Remove"
+        assert wait_element(driver, (By.XPATH, "//button[@data-test='remove-sauce-labs-backpack']")), "Backpack 未成功加入购物车"
 
-        wait_clickable(driver, (By.XPATH, "//button[@data-test='add-to-cart-sauce-labs-bolt-t-shirt']")).click()
-        logger.info('已添加商品 "Sauce Labs Bolt T-Shirt" 到购物车')
-        time.sleep(0.8)
+        # 加购2：Bolt T-Shirt
+        logger.info('添加商品：Sauce Labs Bolt T-Shirt')
+        shirt_btn = wait_clickable(driver, (By.XPATH, "//button[@data-test='add-to-cart-sauce-labs-bolt-t-shirt']"))
+        driver.execute_script("arguments[0].click();", shirt_btn)
+        time.sleep(1)
+        # 验证是否成功加入
+        assert wait_element(driver, (By.XPATH, "//button[@data-test='remove-sauce-labs-bolt-t-shirt']")), "Bolt T-Shirt 未成功加入购物车"
 
         # 4. 进入购物车
         logger.info('4. 开始进入购物车页面')
-        wait_clickable(driver, (By.CLASS_NAME, "shopping_cart_link")).click()
+        # 进入购物车（JS强制点击，保证GitHub必生效）
+        cart_button = wait_clickable(driver, (By.CLASS_NAME, "shopping_cart_link"))
+        driver.execute_script("arguments[0].click();", cart_button)
         logger.info('已进入购物车页面')
         time.sleep(1)
 
+        #  最终验证：必须2个商品
         from pages.cart_page import CartPage
         cart_page_obj = CartPage(driver)
+        real_count = cart_page_obj.get_cart_items_count()
+        logger.info(f'✅ 购物车最终商品数量：{real_count}')
+        assert real_count == 2, f"夹具失败！购物车数量应为2，实际是 {real_count}"
+
         logger.info('=== cart_page fixture执行成功 ===')
         return cart_page_obj
 
