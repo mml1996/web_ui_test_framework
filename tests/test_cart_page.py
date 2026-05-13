@@ -25,12 +25,17 @@ class TestCartPage:
         """测试购物车为空时，页面显示正确信息"""
         with allure.step("先确保购物车为空"):
             item_count = cart_page.get_cart_items_count()
+            # 循环删除所有商品（改用JS强制点击）
             for i in range(item_count):
-                cart_page.remove_item(0)
+                # 定位第1个商品的Remove按钮
+                remove_btn = cart_page.driver.find_element(By.XPATH, "(//button[text()='Remove'])[1]")
+                # 用JS强制点击，确保删除成功
+                cart_page.driver.execute_script("arguments[0].click();", remove_btn)
+                # 每次删除后等待，防止删太快
+                time.sleep(0.5)
+
         with allure.step("验证页面显示购物车为空"):
-            assert cart_page.get_cart_items_count() == 0
-            #empty_message = cart_page.driver.find_element(By.CLASS_NAME, "cart_empty_label").text
-            #assert "Your cart is empty" in empty_message
+            assert cart_page.get_cart_items_count() == 0, "删除后购物车数量不为0"
 
     @allure.story("商品信息验证")
     @allure.title("TC03: 验证购物车中商品信息与添加时一致")
