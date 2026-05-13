@@ -1,0 +1,2 @@
+WARNING  pytest_result_log:plugin.py:122 --Start: tests/test_login.py::TestLoginScenarios::test_login_scenarios[case2]---
+WARNING  pytest_result_log:plugin.py:128 ---End: tests/test_login.py::TestLoginScenarios::test_login_scenarios[case2]----

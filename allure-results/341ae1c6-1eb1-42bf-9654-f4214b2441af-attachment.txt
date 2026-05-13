@@ -1,2 +1,0 @@
-[33mWARNING [0m pytest_result_log:plugin.py:122 Start: tests/test_cart_page.py::TestCartPage::test_continue_shopping_redirects_to_inventory
-[33mWARNING [0m pytest_result_log:plugin.py:128 End: tests/test_cart_page.py::TestCartPage::test_continue_shopping_redirects_to_inventory

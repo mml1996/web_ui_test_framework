@@ -26,4 +26,4 @@ jobs:
           sudo apt-get install -y chromium-browser chromium-chromedriver
 
       - name: Run UI Tests
-        run: pytest tests/ -v
+        run: pytest tests/ -v -n auto

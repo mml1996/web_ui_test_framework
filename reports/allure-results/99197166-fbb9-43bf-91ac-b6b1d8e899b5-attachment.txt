@@ -1,0 +1,2 @@
+WARNING  pytest_result_log:plugin.py:122 Start: tests/test_cart_page.py::TestCartPage::test_cart_items_info_match_added_items
+WARNING  pytest_result_log:plugin.py:128 End: tests/test_cart_page.py::TestCartPage::test_cart_items_info_match_added_items
