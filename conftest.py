@@ -87,7 +87,7 @@ def cart_page(driver):
 
         # 4. 进入购物车
         logger.info('4. 开始进入购物车页面')
-        driver.find_element(By.CLASS_NAME, "shopping_cart_link").click()
+        wait_clickable(driver, (By.CLASS_NAME, "shopping_cart_link")).click()
         logger.info('已进入购物车页面')
 
         from pages.cart_page import CartPage
